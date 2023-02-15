@@ -1,0 +1,8 @@
+.hero {
+    background-color: #f80505;
+}
+@media screen and (min-width: 480px) {
+    .hero {
+        background-color: #15ff00;
+    }
+}
