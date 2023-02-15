@@ -11,7 +11,6 @@ export default defineConfig({
         main: resolve(__dirname, 'src/index.html'),
         second: resolve(__dirname, 'scr/restaurant.html'),
         next: resolve(__dirname, 'src/hotel.html'),
-        next: resolve(__dirname, 'src/room.html'),
       },
     },
     outDir: '../dist',
