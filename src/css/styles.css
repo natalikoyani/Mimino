@@ -6,6 +6,10 @@
 */
 @import url('./reset.css');
 
+@font-face {
+  font-family: Film P3;
+  src: url(../fonts/FontsFree-Net-FilmP3.ttf);
+}
 
 .visually-hidden {
   position: absolute;
