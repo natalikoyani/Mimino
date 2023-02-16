@@ -5,10 +5,34 @@
   |============================
 */
 @import url('./reset.css');
+@import url('./hero.css');
+@import url('./hero4.css');
+@import url('./aboutrest.css');
+@import url('./detailsrest.css');
+@import url('./abouthotel.css');
+@import url('./detailshotel.css');
+@import url('./contacts.css');
+@import url('./aboutkitchen.css');
+@import url('./menu.css');
+@import url('./luxe.css');
+@import url('./room1.css');
+@import url('./room2.css');
+@import url('./amenities.css');
+@import url('./modal.css');
 
 @font-face {
   font-family: Film P3;
   src: url(../fonts/FontsFree-Net-FilmP3.ttf);
+}
+
+:root {
+  /* Колір описових параграфів. */
+  --primary-text-color: #7A7A7A;
+  /* Колір кнопок, посилань та логотипу. */
+  --primary-gold-color: #C79002;
+  /* Все що біле-біле на макеті. */
+  --primary-white-color: #FFFFFF;
+  --timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .visually-hidden {
