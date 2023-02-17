@@ -29,8 +29,10 @@
 :root {
   /* Колір описових параграфів. */
   --primary-text-color: #7A7A7A;
-  /* Колір кнопок, посилань та логотипу. */
-  --primary-gold-color: #C79002;
+  /* Золотий колір кнопок, посилань та логотипу. */
+  --first-gold-color: #C79002;
+  /* Другий відтінок золотого. */
+  --second-gold-color: #F3C653;
   /* Все що біле-біле на макеті. */
   --primary-white-color: #FFFFFF;
   --timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
