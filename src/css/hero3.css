@@ -1,1 +1,120 @@
 /* ------------Hotel Page Hero------------ */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+  padding: 0px;
+}
+ul,
+ol {
+  margin: 0px;
+  padding: 0px;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.hotel-page-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 4, 4, 0.65)),
+    url(../img/hotel-hero-mob1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+  background-size: cover;
+  padding-top: 120px;
+  padding-bottom: 20px;
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hotel-page-hero {
+    background-image: linear-gradient(rgba(0, 4, 4, 0.65), rgba(0, 4, 4, 0.65)),
+      url(../img/hotel-hero-mob2x.jpg);
+  }
+}
+
+.hotel-page-hero > .container {
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.location {
+  position: absolute;
+  right: 15px;
+  top: -120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 210px;
+  height: 47px;
+  border: 1px solid rgba(243, 198, 83, 0.7);
+  border-radius: 2px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  letter-spacing: 0.01em;
+  color: #e5e5e5;
+  gap: 8px;
+  margin-top: 9px;
+}
+.location-icon {
+  fill: #f3c653;
+}
+.hero-title {
+  font-family: 'Film P3';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: calc(103 / 96);
+  letter-spacing: 0.3em;
+  color: #ffffff;
+  margin-bottom: 32px;
+}
+.hero-sub-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 178px;
+}
+.table-button {
+  margin-bottom: 24px;
+}
+.btn {
+  width: 236px;
+  height: 48px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.02em;
+  color: #f3c653;
+}
+.number-button {
+  margin-bottom: 58px;
+}
+.soc-list {
+  display: flex;
+  gap: 20px;
+}
+
+@media screen and (min-width: 414px) {
+  .container {
+    max-width: 414px;
+  }
+}
