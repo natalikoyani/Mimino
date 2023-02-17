@@ -1,12 +1,15 @@
 <!-- ---------Details of our restaurant--------- -->
+
 <section class="rest-details">
   <div class="container">
-    <p class="rest-details-uppertext">MIMIHO</p>
-    <h2 class="rest-details-title">Ресторан</h2>
-    <p class="rest-details-lowertext">
-      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-      Velit officia consequat duis enim velit mollit.
-    </p>
+    <div class="rest-details-textwrap">
+      <p class="rest-details-uppertext">MIMIHO</p>
+      <h2 class="rest-details-title">Ресторан</h2>
+      <p class="rest-details-lowertext">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit.
+      </p>
+    </div>
     <ul class="rest-details-list">
       <li class="rest-details-item">
         <img
@@ -38,7 +41,7 @@
           <img src="../img/rest_details_2_1x.jpg" height="270" alt="Shashlyk" />
         </picture>
       </li>
-      <li class="rest-details-item">
+      <li class="rest-details-item visually-hidden">
         <picture>
           <source
             srcset="
@@ -70,7 +73,13 @@
         <use href="../img/icons.svg#arrow-right"></use>
       </svg>
     </div>
-    <button type="button" class="book-table">Забронювати столик</button>
-    <a class="check-menu" href="../restaurant.html"> Переглянути меню </a>
+    <div class="rest-details-btnwrap">
+      <button type="button" class="rest-details-btn">Забронювати столик</button>
+      <button type="button" class="rest-details-btn">
+        <a class="check-menu-link" href="../restaurant.html">
+          Переглянути меню
+        </a>
+      </button>
+    </div>
   </div>
 </section>
