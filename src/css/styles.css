@@ -28,18 +28,18 @@
 
 :root {
   /* Колір описових параграфів. */
-  --primary-text-color: #7A7A7A;
+  --primary-text-color: #7a7a7a;
   /* Золотий колір кнопок, посилань та логотипу. */
-  --first-gold-color: #C79002;
+  --first-gold-color: #c79002;
   /* Другий відтінок золотого. */
-  --second-gold-color: #F3C653;
+  --second-gold-color: #f3c653;
   /* Все що біле-біле на макеті. */
-  --primary-white-color: #FFFFFF;
+  --primary-white-color: #ffffff;
   --timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .container {
