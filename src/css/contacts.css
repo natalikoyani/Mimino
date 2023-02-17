@@ -1,1 +1,237 @@
 /* <!-- ---------Contacts--------- --> */
+
+.main-contacts-container {
+    max-width: calc(384px + 30px);
+    padding: 36px 15px 32px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #FFFDEE
+}
+
+.main-contacts-name {
+    margin-bottom: 12px;
+    font-family: 'Film P3', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.08;
+    letter-spacing: 0.3em;
+    color: #494848;
+
+}
+
+.main-contacts-organization {
+    margin-bottom: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: #7A7A7A;
+}
+
+.main-contacts-item {
+    display: flex;
+    gap: 22px;
+    margin-bottom: 16px;       
+}
+
+.main-contacts-list > li:nth-child(3) {
+    margin-bottom: 32px;
+}
+
+
+.main-contacts-text {
+    width: 102px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #C79002;
+}
+
+.main-contacts-tel {
+    display: inline-flex;
+    padding: 9px 7px 7px;    
+    align-items: center;
+    background-color: #ffffff;
+    border: 0.5px solid #F3C653;
+    border-radius: 2px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;    
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.02em;
+    color: #494848;
+}
+
+.contacts-tel1 {
+    min-width: 144px;
+    height: 40px;
+}
+
+.main-contacts-call {
+    display: flex;
+    flex-wrap: wrap;    
+    max-width: 262px;
+    justify-content: center;
+    border: 0.5px solid #F3C653;
+    border-radius: 2px;
+}
+
+.main-contacts-call > a {
+    border: none;
+}
+
+.main-contacts-call > .contacts-tel2 {
+    min-width: 142px;
+    height: 40px;
+    padding-right: 0;
+    margin-right: 6px;
+}
+
+.main-contacts-call > .contacts-tel3 {
+    min-width: 110px;
+    height: 40px;
+    padding-left: 0;
+}
+
+.main-contacts-item svg {
+    margin-right: 8px;
+    fill: #C79002;
+}
+
+.main-contacts a {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.main-contacts a:hover,
+.main-contacts a:focus {
+    color: #C79002;
+}
+
+.main-contacts-place {
+    display: inline-flex;    
+    margin-left: 124px;
+    padding: 8px 33px 7px 10px;
+    max-width: 260px;
+    align-items: center;
+    background-color: #FFFFFF;
+    border: 0.5px solid #F3C653;
+    border-radius: 2px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+    color: #494848;
+}
+
+.main-contacts-google-map {
+    border: 1px solid #BABABA;
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+}
+
+/*----MOBILE----*/
+@media screen and (min-width: 414px) {
+    .main-contacts-container {
+        width: calc(384px + 30px);
+    }    
+}
+
+/*----TABLET----*/
+@media screen and (min-width: 1024px) {
+    .main-contacts-container {
+        min-width: 1024px;
+        padding: 56px 47px 40px;
+    }
+
+    .main-contacts-name {
+        margin-bottom: 8px;
+        font-size: 64px;
+        line-height: 1.08;
+        letter-spacing: 0.3em;
+    }
+
+    .main-contacts-organization {
+        margin-bottom: 52px;
+    }
+
+    .main-contacts-container {
+        position: relative;
+    }
+
+    .main-contacts-item {
+        display: block; 
+        gap: none;
+        margin-bottom: 0;
+    }
+
+    .main-contacts-list > li:nth-child(1) {
+        margin-bottom: 24px;
+    }
+    
+    .main-contacts-list > li:nth-child(2) {
+        margin-bottom: 48px;
+    }
+
+    .main-contacts-list > li:nth-child(3) {
+        margin-bottom: 0;
+    }
+
+    .main-contacts-text {
+        margin-bottom: 8px;
+    }
+    
+    .main-contacts-call {
+        max-width: 270px;
+    }
+    
+    .main-contacts-call > .contacts-tel2 {
+        margin-right: 16px;
+    }
+    
+    .main-contacts-place {
+        margin-left: 0;
+        padding: 9px 8px 7px 10px;
+        max-width: 285px;
+    }
+    
+    .main-contacts-google-map {
+        width: 535px;
+        height: 412px;
+        position: absolute;
+        right: 47px;
+        bottom: 40px;
+    }
+}
+
+/*----DESKTOP----*/
+@media screen and (min-width: 1280px) {
+    .main-contacts-container {
+        min-width: 1280px;
+        padding: 56px 85px 73px;
+    }
+
+    .main-contacts-name {
+        margin-bottom: 16px;
+    }
+
+    .main-contacts-organization {
+        margin-bottom: 40px;
+        font-size: 20px;
+        line-height: 1.22;
+    }
+   
+    .main-contacts-google-map {
+        width: 634px;
+        height: 412px;
+        position: absolute;
+        right: 85px;
+        bottom: 74px;
+    }
+}
