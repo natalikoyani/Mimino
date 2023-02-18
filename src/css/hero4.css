@@ -1,1 +1,44 @@
 /* <!-- ---------Room Page Hero--------- --> */
+
+.room-hero {
+  padding-bottom: 18px;
+  padding-top: 286px;
+  background-color: #595959;
+  /* background-image: url(../img/room_hero_bg_mob_1x.jpg); */
+}
+
+.room-hero-arrows {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 93px;
+}
+
+.golden-arrows {
+  fill: var(--second-gold-color);
+  background-color: rgba(0, 0, 0, 0.65);
+  transition: fill var(--timing-function);
+}
+
+.golden-arrows:hover,
+.golden-arrows:focus,
+.golden-arrows:active {
+  fill: var(--primary-white-color);
+}
+
+.room-hero-title {
+  margin-bottom: 14px;
+  font-family: 'Times New Roman', serif;
+  font-size: 28px;
+  line-height: 1.14;
+  letter-spacing: 0.05em;
+  color: var(--primary-white-color);
+}
+
+.room-hero-text {
+  margin-bottom: 17px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: var(--primary-white-color);
+}
