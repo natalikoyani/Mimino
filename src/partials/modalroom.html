@@ -1,22 +1,18 @@
 <!-- ---------Book Room Modal window--------- -->
 
-<section class="book-room-modal is-hidden">
+<section class="book-room-modal modal" data-modal="modalroom">
   <div class="modal-container book-room">
-    <button
-      type="button"
-      class="modal-close"
-      data-book-room-modal-close
-    >
+    <button type="button" class="modal-close js-modal-close">
       <svg class="modal-close-icon" width="24" height="24">
         <use href="../img/icons.svg#modal-close"></use>
       </svg>
     </button>
-  
+
     <h2 class="modal-title">ЗАБРОНЮВАТИ НОМЕР</h2>
-  
+
     <form class="modal-form">
       <div class="book-room-user-contacts">
-        <div class="modal-field">        
+        <div class="modal-field">
           <input
             type="text"
             class="modal-input"
@@ -25,12 +21,12 @@
             placeholder="Ваше ім’я"
             required
           />
-  
+
           <label for="book-room-user-name" class="modal-input-label"
             >На кого забронювати номер?</label
           >
         </div>
-  
+
         <div class="modal-field">
           <input
             type="tel"
@@ -46,7 +42,7 @@
           >
         </div>
       </div>
-  
+
       <div class="modal-field room-type">
         <div class="select-wrap">
           <select
@@ -58,12 +54,12 @@
             <option value="triple ">Трьохмісний</option>
             <option value="duplex">Двомісний</option>
           </select>
-        </div >
+        </div>
         <label for="book-room-room-type" class="modal-input-label"
           >Категорія номеру</label
         >
       </div>
-  
+
       <div class="book-room-dates">
         <div class="modal-field">
           <div class="select-wrap">
@@ -76,12 +72,12 @@
               <option value="tomorrow">Завтра</option>
               <option value="day-after-tomorrow">Післязавтра</option>
             </select>
-          </div >
+          </div>
           <label for="book-room-date-arrive" class="modal-input-label"
             >Дата заїзду</label
           >
         </div>
-  
+
         <div class="modal-field">
           <div class="select-wrap">
             <select
@@ -99,10 +95,9 @@
           >
         </div>
       </div>
+
       <div class="modal-submit">
-        <button type="submit" class="modal-btn">
-          ОФОРМИТИ БРОНЮВАННЯ
-        </button>
+        <button type="submit" class="modal-btn">ОФОРМИТИ БРОНЮВАННЯ</button>
       </div>
     </form>
   </div>
