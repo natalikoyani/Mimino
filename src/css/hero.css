@@ -351,13 +351,7 @@
     margin-bottom: 0;
   }
   .mimiho-soc-list {
-    position: absolute;
-    top: 38px;
-    right: 85px;
-    gap: 22px;
-  }
-  .location-icon {
-    margin-right: 16px;
+    display: none;
   }
 }
 
