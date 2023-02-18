@@ -17,7 +17,7 @@
     />
     
     <script type="module" crossorigin src="/team-19/assets/styles-fac82e35.js"></script>
-    <link rel="stylesheet" href="/team-19/assets/styles-f78a2833.css">
+    <link rel="stylesheet" href="/team-19/assets/styles-3f978ffe.css">
   </head>
   <body>
     <header class="header">
@@ -386,17 +386,23 @@ Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit 
         <a href="./index.html" class="footer-logo">MIMIHO</a>
         <div class="footer-box">
           <ul class="footer-nav-list">
-            <li class="footer-nav-item"><a href="./index.html" class="footer-nav-link">Головна</a></li>
-            <li class="footer-nav-item"><a href="./restaurant.html" class="footer-nav-link">Ресторан</a></li>
-            <li class="footer-nav-item"><a href="./hotel.html" class="footer-nav-link">Готель</a></li>
+            <li class="footer-nav-item">
+              <a href="./index.html" class="footer-nav-link">Головна</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="./restaurant.html" class="footer-nav-link">Ресторан</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="./hotel.html" class="footer-nav-link">Готель</a>
+            </li>
           </ul>
           <ul class="footer-social-list">
             <li class="footer-social-item">
-              <a 
-              href="https://www.instagram.com/"
-              class="footer-social-link"
-              target="_blank"
-              rel="noreferrer noopener"
+              <a
+                href="https://www.instagram.com/"
+                class="footer-social-link"
+                target="_blank"
+                rel="noreferrer noopener"
               >
                 <span class="footer-social-text">Instagram</span>
                 <svg class="footer-social-icon" width="24px" height="24px">
@@ -405,11 +411,11 @@ Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit 
               </a>
             </li>
             <li class="footer-social-item">
-              <a 
-              href="https://www.facebook.com/"
-              class="footer-social-link"
-              target="_blank"
-              rel="noreferrer noopener"
+              <a
+                href="https://www.facebook.com/"
+                class="footer-social-link"
+                target="_blank"
+                rel="noreferrer noopener"
               >
                 <span class="footer-social-text">Facebook</span>
                 <svg class="footer-social-icon" width="24px" height="24px">
@@ -418,11 +424,11 @@ Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit 
               </a>
             </li>
             <li class="footer-social-item">
-              <a 
-              href="https://web.telegram.org/"
-              class="footer-social-link"
-              target="_blank"
-              rel="noreferrer noopener"
+              <a
+                href="https://web.telegram.org/"
+                class="footer-social-link"
+                target="_blank"
+                rel="noreferrer noopener"
               >
                 <span class="footer-social-text">Telegram</span>
                 <svg class="footer-social-icon" width="24px" height="24px">
@@ -434,6 +440,173 @@ Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit 
         </div>
       </div>
     </footer>
+    <!-- ----------Room Price Modal window---------- -->
+
+<section class="price-modal modal" data-modal="modalprice">
+  <div class="modal-container price-modal-wrap">
+    <button type="button" class="modal-close js-modal-close">
+      <svg class="modal-close-icon" width="24" height="24">
+        <use href="../img/icons.svg#modal-close"></use>
+      </svg>
+    </button>
+
+    <h2 class="modal-title">ЦІНИ НА НОМЕР</h2>
+
+    <form class="modal-form">
+      <div class="price-room-type">
+        <h3 class="room-type-title">Двомісний люкс</h3>
+        <p class="room-type-text">Категорія номеру</p>
+      </div>
+
+      <div class="price-room-wrap">
+        <div class="modal-field">
+          <div class="select-wrap">
+            <select
+              class="modal-input"
+              name="price-night-quantity"
+              id="price-night-quantity"
+            >
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>7</option>
+              <option>14</option>
+            </select>
+          </div>
+
+          <label for="price-night-quantity" class="modal-input-label"
+            >Кількість ночей</label
+          >
+        </div>
+
+        <div class="modal-field">
+          <input
+            type="text"
+            class="modal-input"
+            name="price-room-cost"
+            id="price-room-cost"
+            value="1000"
+            readonly
+          />
+          <label for="price-room-cost" class="modal-input-label">грн</label>
+        </div>
+      </div>
+
+      <div class="modal-submit">
+        <button type="submit" class="modal-btn">ЗАБРОНЮВАТИ НОМЕР</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+    <!-- ---------Book Room Modal window--------- -->
+
+<section class="book-room-modal modal" data-modal="modalroom">
+  <div class="modal-container book-room">
+    <button type="button" class="modal-close js-modal-close">
+      <svg class="modal-close-icon" width="24" height="24">
+        <use href="../img/icons.svg#modal-close"></use>
+      </svg>
+    </button>
+
+    <h2 class="modal-title">ЗАБРОНЮВАТИ НОМЕР</h2>
+
+    <form class="modal-form">
+      <div class="book-room-user-contacts">
+        <div class="modal-field">
+          <input
+            type="text"
+            class="modal-input"
+            name="book-room-user-name"
+            id="book-room-user-name"
+            placeholder="Ваше ім’я"
+            required
+          />
+
+          <label for="book-room-user-name" class="modal-input-label"
+            >На кого забронювати номер?</label
+          >
+        </div>
+
+        <div class="modal-field">
+          <input
+            type="tel"
+            class="modal-input"
+            name="book-room-user-phone"
+            id="book-room-user-phone"
+            placeholder="+38 (___) ___-__-__"
+            pattern="^[\+]?3?[\s]?8?[\s]?\(?0\d{2}?\)?[\s]?\d{3}[\s|-]?\d{2}[\s|-]?\d{2}$"
+            required
+          />
+          <label for="book-room-user-phone" class="modal-input-label"
+            >Номер телефону</label
+          >
+        </div>
+      </div>
+
+      <div class="modal-field room-type">
+        <div class="select-wrap">
+          <select
+            class="modal-input select"
+            name="book-room-room-type"
+            id="book-room-room-type"
+          >
+            <option value="double-suite">Двомісний люкс</option>
+            <option value="triple ">Трьохмісний</option>
+            <option value="duplex">Двомісний</option>
+          </select>
+        </div>
+        <label for="book-room-room-type" class="modal-input-label"
+          >Категорія номеру</label
+        >
+      </div>
+
+      <div class="book-room-dates">
+        <div class="modal-field">
+          <div class="select-wrap">
+            <select
+              class="modal-input"
+              name="book-room-date-arrive"
+              id="book-room-date-arrive"
+            >
+              <option value="today">Сьогодні</option>
+              <option value="tomorrow">Завтра</option>
+              <option value="day-after-tomorrow">Післязавтра</option>
+            </select>
+          </div>
+          <label for="book-room-date-arrive" class="modal-input-label"
+            >Дата заїзду</label
+          >
+        </div>
+
+        <div class="modal-field">
+          <div class="select-wrap">
+            <select
+              class="modal-input"
+              name="book-room-date-depart"
+              id="book-room-date-depart"
+            >
+              <option value="today">Сьогодні</option>
+              <option value="tomorrow">Завтра</option>
+              <option value="day-after-tomorrow">Післязавтра</option>
+            </select>
+          </div>
+          <label for="book-room-date-depart" class="modal-input-label"
+            >Дата виїзду</label
+          >
+        </div>
+      </div>
+
+      <div class="modal-submit">
+        <button type="submit" class="modal-btn">ОФОРМИТИ БРОНЮВАННЯ</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+    <div class="modal-overlay js-overlay-modal"></div>
     
   </body>
 </html>
