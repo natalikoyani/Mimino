@@ -1,8 +1,6 @@
 /* <!-- ---------- Modal ---------- --> */
 
-
 .modal-overlay {
-   
   /* Скрываем подложку  */
   opacity: 0;
   visibility: hidden;
@@ -14,33 +12,32 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, .5);
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 20;
   transition: opacity var(--timing-function), visibility var(--timing-function);
 }
 
-.modal {  
+/* Стили для модальных окон */
+
+.modal {
   /* Скрываем окна  */
   opacity: 0;
-  visibility: hidden; 
-  
+  visibility: hidden;
+
   /*  Установаем ширину окна  */
-  width: 100vw;  
-  height: 100vh;  
+  width: 100%;
   /*  Центрируем и задаем z-index */
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 30; /* Должен быть выше чем у подложки*/
-  
 }
-
 
 /* Стили для активных классов подложки и окна */
 
 .modal.active,
-.modal-overlay.active{
+.modal-overlay.active {
   opacity: 1;
   visibility: visible;
 }
@@ -64,6 +61,15 @@ select {
   right: 15px;
   transform: translateY(-50%);
   background-image: url('../img/arrow-down-bold.svg');
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(96, 91, 91, 0.4);
+  transition: opacity var(--timing-function), visibility var(--timing-function);
 }
 
 .modal-container {
@@ -197,7 +203,6 @@ select {
 
 /* ---------------PRICE---------------- */
 
-
 .room-type-title {
   font-family: 'Times New Roman', sans-serif;
   font-style: normal;
@@ -253,7 +258,6 @@ select {
     top: 50%;
     left: 50%;
     width: 414px;
-  
     transform: translate(-50%, -50%) scale(1);
     transition: transform var(--timing-function);
   }
@@ -291,7 +295,6 @@ select {
   }
 
   .modal-input-label {
-  
     font-size: 16px;
     line-height: calc(20 / 16);
   }
@@ -348,9 +351,7 @@ select {
 
   /* ---------------PRICE---------------- */
 
-
   .price-modal-wrap {
-
     height: 489px;
   }
 
