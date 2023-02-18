@@ -1,1 +1,84 @@
 <!-- ------------Book Table Modal window------------ -->
+<section class="book-table-modal backdrop">
+  <div class="modal-container book-table">
+    <button type="button" class="modal-close" data-book-room-modal-close>
+      <svg class="modal-close-icon" width="24" height="24">
+        <use href="../img/icons.svg#modal-close"></use>
+      </svg>
+    </button>
+
+    <h2 class="modal-title">ЗАБРОНЮВАТИ СТОЛИК</h2>
+
+    <form class="modal-form">
+      <div class="book-table-wrap">
+        <div class="modal-field">
+          <input
+            type="text"
+            class="modal-input"
+            name="book-table-user-name"
+            id="book-table-user-name"
+            placeholder="Ваше ім’я"
+            required
+          />
+
+          <label for="book-table-user-name" class="modal-input-label"
+            >На кого забронювати столик?</label
+          >
+        </div>
+
+        <div class="modal-field">
+          <input
+            type="tel"
+            class="modal-input"
+            name="book-table-user-phone"
+            id="book-table-user-phone"
+            placeholder="+38 (___) ___-__-__"
+            pattern="^[\+]?3?[\s]?8?[\s]?\(?0\d{2}?\)?[\s]?\d{3}[\s|-]?\d{2}[\s|-]?\d{2}$"
+            required
+          />
+          <label for="book-table-user-phone" class="modal-input-label"
+            >Номер телефону</label
+          >
+        </div>
+        <div class="modal-field">
+          <div class="select-wrap">
+            <select
+              class="modal-input"
+              name="book-table-person"
+              id="book-table-person"
+            >
+              <option>2</option>
+              <option>4</option>
+              <option>8</option>
+              <option>10</option>
+            </select>
+          </div>
+          <label for="book-table-person" class="modal-input-label"
+            >Столик на яку кількість осіб?</label
+          >
+        </div>
+
+        <div class="modal-field">
+          <div class="select-wrap">
+            <select
+              class="modal-input"
+              name="book-table-date"
+              id="book-table-date"
+            >
+              <option value="today">Сьогодні</option>
+              <option value="tomorrow">Завтра</option>
+              <option value="day-after-tomorrow">Післязавтра</option>
+            </select>
+          </div>
+          <label for="book-table-date" class="modal-input-label"
+            >На яку дату бронювати?</label
+          >
+        </div>
+      </div>
+
+      <div class="modal-submit">
+        <button type="submit" class="modal-btn">ОФОРМИТИ БРОНЮВАННЯ</button>
+      </div>
+    </form>
+  </div>
+</section>

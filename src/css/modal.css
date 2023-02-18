@@ -5,14 +5,6 @@
   pointer-events: none;
 }
 
-.book-room-modal {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(96, 91, 91, 0.4);
-  transition: opacity var(--timing-function), visibility var(--timing-function);
-}
 select {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -32,6 +24,15 @@ select {
   right: 15px;
   transform: translateY(-50%);
   background-image: url('../img/arrow-down-bold.svg');
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(96, 91, 91, 0.4);
+  transition: opacity var(--timing-function), visibility var(--timing-function);
 }
 
 .modal-container {
@@ -80,6 +81,66 @@ select {
   margin-bottom: 40px;
 }
 
+.modal-input {
+  width: 100%;
+  height: 54px;
+  background-color: transparent;
+  border: 1px solid var(--first-gold-color);
+
+  padding: 0;
+  padding-left: 12px;
+
+  font-family: 'Times New Roman', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(23 / 20);
+  letter-spacing: 0.05em;
+  color: #808080;
+}
+
+.modal-input-label {
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+
+  letter-spacing: 0.02em;
+  color: var(--first-gold-color);
+  margin-top: 8px;
+  margin-left: 12px;
+}
+
+.modal-btn {
+  width: 100%;
+  min-height: 64px;
+  text-align: center;
+  padding: 0;
+
+  background-color: #000000;
+
+  border: 1px solid var(--second-gold-color);
+  border-radius: 2px;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+
+  color: var(--primary-white-color);
+
+  transition: color var(--timing-function),
+    background-color var(--timing-function), border-color var(--timing-function);
+}
+
+/* .modal-btn:active */
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: var(--second-gold-color);
+  color: #000000;
+  border-color: var(--second-gold-color);
+}
+
+/* ---------------BOOK ROOM---------------- */
+
 .book-room-user-contacts {
   display: flex;
   flex-direction: column;
@@ -103,62 +164,59 @@ select {
   margin-bottom: 20px;
 }
 
-.modal-input {
-  width: 100%;
-  height: 54px;
-  background-color: transparent;
-  border: 1px solid var(--primary-gold-color);
+/* ---------------PRICE---------------- */
 
-  padding: 0;
-  padding-left: 12px;
+/* .modal-container.price-modal-wrap {
+  max-height: 572px;
+} */
 
+.room-type-title {
   font-family: 'Times New Roman', sans-serif;
+  font-style: normal;
   font-weight: 700;
-  font-size: 20px;
-  line-height: calc(23 / 20);
+  font-size: 24px;
+  line-height: calc(28 / 24);
+
   letter-spacing: 0.05em;
   color: #808080;
+  margin-bottom: 28px;
 }
 
-.modal-input-label {
-  display: block;
+.room-type-text {
+  font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-  line-height: calc(17 / 14);
+  font-size: 16px;
+  line-height: calc(20 / 16);
 
   letter-spacing: 0.02em;
-  color: var(--primary-gold-color);
-  margin-top: 8px;
-  margin-left: 12px;
+  color: var(--first-gold-color);
+
+  margin-bottom: 20px;
 }
 
-.modal-btn {
-  width: 100%;
-  min-height: 64px;
-  text-align: center;
-  padding: 0;
+.price-room-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: auto;
+  margin-bottom: 40px;
+}
 
-  background-color: #000000;
+.price-room-wrap > .modal-input {
+  font-size: 24px;
+  line-height: calc(28 / 24);
+}
 
-  border: 1px solid #f3c653;
+/* ---------------TABLE---------------- */
+.book-table-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.book-table-wrap > .modal-field:nth-child(odd) .modal-input {
   border-radius: 2px;
-
-  font-weight: 500;
-  font-size: 20px;
-  line-height: calc(24 / 20);
-
-  color: var(--primary-white-color);
-
-  transition: color var(--timing-function),
-    background-color var(--timing-function), border-color var(--timing-function);
-}
-
-/* .modal-btn:active */
-.modal-btn:hover,
-.modal-btn:focus {
-  background-color: #f3c653;
-  color: #000000;
-  border-color: #f3c653;
 }
 
 @media screen and (min-width: 414px) {
@@ -166,20 +224,27 @@ select {
     position: absolute;
     top: 50%;
     left: 50%;
-
+    width: 414px;
     transform: translate(-50%, -50%) scale(1);
     transition: transform var(--timing-function);
   }
-  .modal-container.book-room {
-    width: 414px;
+ 
+  .book-room {
     height: 780px;
+  }
+
+  .price-modal-wrap {
+    height: 572px;
+  }
+
+ .book-table {
+    height: 668px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .modal-container.book-room {
+  .modal-container {
     width: 712px;
-    height: 638px;
     padding: 60px;
   }
 
@@ -196,6 +261,25 @@ select {
     margin-bottom: 40px;
   }
 
+  .modal-input-label {
+    font-size: 16px;
+    line-height: calc(20 / 16);
+  }
+
+  .modal-input {
+    height: 64px;
+
+    font-size: 24px;
+    line-height: calc(28 / 24);
+  }
+
+  .modal-btn {
+    font-size: 24px;
+  }
+
+  .book-room {
+    height: 638px;
+  }
   .book-room-modal .modal-title {
     margin-bottom: 36px;
   }
@@ -207,11 +291,6 @@ select {
     gap: 16px;
     margin: auto;
     margin-bottom: 28px;
-  }
-
-  .modal-input-label {
-    font-size: 16px;
-    line-height: calc(20 / 16);
   }
 
   .room-type {
@@ -237,14 +316,46 @@ select {
     width: calc((100%-16px) / 2);
   }
 
-  .modal-input {
-    height: 64px;
+  /* ---------------PRICE---------------- */
 
-    font-size: 24px;
-    line-height: calc(28 / 24);
+  .price-modal-wrap {
+    height: 489px;
   }
 
-  .modal-btn {
-    font-size: 24px;
+  .price-modal-wrap > .modal-title {
+    font-size: 32px;
+    line-height: calc(37 / 32);
+    letter-spacing: 0;
+  }
+
+  .price-room-wrap {
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    gap: 16px;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+
+  .price-room-wrap > .modal-field {
+    width: calc((100%-16px) / 2);
+  }
+
+  /* ---------------TABLE---------------- */
+
+  .modal-container.book-table {
+    height: 522px;
+  }
+  .book-table-wrap {
+    /* display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 40px; */
+    flex-wrap: wrap;
+    height: 212px;
+  }
+
+  .book-table-wrap > .modal-field {
+    width: calc((100%-16px) / 2);
   }
 }
