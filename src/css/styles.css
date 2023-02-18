@@ -88,6 +88,12 @@ body {
   letter-spacing: 0.3em;
   color: var(--primary-white-color);
 }
+.header-logo:hover,
+.header-logo:focus {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
 .header-list {
   display: flex;
   align-items: center;
@@ -101,6 +107,12 @@ body {
   line-height: 1.25;
   letter-spacing: 0.02em;
   color: var(--second-gold-color);
+}
+.header-item:hover,
+.header-item:focus {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
 }
 .header-box {
 }
