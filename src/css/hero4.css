@@ -4,8 +4,7 @@
   position: relative;
   padding-bottom: 18px;
   padding-top: 286px;
-  background-color: #595959;
-  /* background-image: url(../img/room_hero_bg_mob_1x.jpg); */
+  background-image: url();
 }
 
 .room-hero-arrows {
@@ -49,8 +48,8 @@
   position: absolute;
   top: 0;
   right: 12px;
-  display: flex;
   width: 210px;
+  padding: 8px 3px 9px 34px;
   font-style: normal;
   font-size: 12px;
   line-height: 1.25;
@@ -58,6 +57,14 @@
   color: #e5e5e5;
   border: 1px solid rgba(243, 198, 83, 0.7);
   border-radius: 2px;
+}
+
+.room-hero-address. > .maps-link {
+}
+
+.room-hero-address .location-icon {
+  position: absolute;
+  transform: translateX(-28px) translateY(5px);
 }
 
 .room-hero-soc-item:not(:last-child) {
