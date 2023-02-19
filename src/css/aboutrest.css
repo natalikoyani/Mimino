@@ -1,15 +1,17 @@
 /* <!-- -------About our restaurant------- --> */
 .about-rest {
+   background-color: #fffdee;
+}
+.about-rest > .container {
     padding-top: 16px;
     padding-bottom: 20px;
-    background: #fffdee;
     position: relative;
 }
 .border-one,
 .border-two,
 .border-three,
 .border-four {
-    background: #DADADA;
+    background-color: #DADADA;
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
 }
@@ -38,7 +40,7 @@
     font-size: 12px;
     line-height: 1.25;
     letter-spacing: 0.02em;
-    color: #7A7A7A;
+    color: var(--primary-text-color);
     margin-bottom: 28px;
 }
 .about-restaurant {
@@ -60,7 +62,7 @@
     font-size: 12px;
     line-height: 1.25;
     letter-spacing: 0.02em;
-    color: #C79002;
+    color: var(--first-gold-color);
     margin-top: 70px;
 }
 
@@ -79,8 +81,13 @@
     margin-left: auto;
     margin-top: 297px;
 }
-.about-icon:hover {
-fill: #F3C653;
+.about-icon-rest {
+  transition: fill var(--timing-function);
+}
+.about-icon-rest:hover,
+.about-icon-rest:focus,
+.about-icon-rest:active {
+fill: var(--second-gold-color);
 }
 /* ------- Mob ------- */
 
@@ -91,7 +98,7 @@ fill: #F3C653;
 }
 
 @media screen and (min-width: 414px) {
-  .container-about-rest {
+  .about-res > .container {
     width: 414px;
   }
   .img-about-rest {
@@ -107,13 +114,13 @@ fill: #F3C653;
 
 /* ------- Tab --------- */
 @media screen and (min-width: 1024px) {
-  .about-rest {
-    padding-top: 120px;
+  
+  .about-rest > .container {
+    min-width: 1024px;
+     padding-top: 120px;
     padding-bottom: 32px;
     padding-left: 47px;
-  }
-  .container-about-rest {
-    width: 1024px;
+    padding-right: 60px;
   }
   .border-one {
     box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
@@ -159,6 +166,7 @@ fill: #F3C653;
     position: absolute;
     padding: 0;
     margin: 0;
+     gap: 40px;
     top: 948px;
     left: 536px;
   }
@@ -166,18 +174,18 @@ fill: #F3C653;
   .about-arrow {
     margin-top: 198px;
     /* padding-left: 790px; */
-    margin-left: 790px;
+    margin-left: 819px;
   }
 }
 
 /* ----- Desc ------*/
 @media screen and (min-width: 1280px) {
-  .about-rest {
+  
+  .about-rest > .container {
+    min-width: 1280px;
     padding-bottom: 50px;
     padding-left: 85px;
-  }
-  .container-about-rest {
-    width: 1280px;
+    padding-right: 85px;
   }
   .border-two {
      box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
@@ -192,7 +200,7 @@ fill: #F3C653;
   .about-pexels {
     gap: 32px;
   }
-  .img-about-rest {
+  .img-about-rest{
     top: -33px;
     left: 640px;
   }
@@ -203,6 +211,6 @@ fill: #F3C653;
 .about-arrow {
   /* padding-left: 980px; */
    margin-top: 143px;
-   margin-left: 980px;
+   margin-left: 1012px;
   }
 }
