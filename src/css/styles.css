@@ -72,8 +72,8 @@ body {
 
 .header {
   position: absolute;
-  left: 50%;
-  transform: translate(-50%) scale(1);
+  left: 0;
+  right: 0;
 }
 .header > .container {
   display: flex;
