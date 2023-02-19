@@ -215,6 +215,11 @@ body {
 }
 
 @media screen and (min-width: 414px) {
+  .container{
+    width: 414px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
   .header-logo {
     margin-right: 52px;
   }
