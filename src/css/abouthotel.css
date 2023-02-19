@@ -1,15 +1,17 @@
 /* <!-- --------About our hotel-------- --> */
 .about-hotel {
+   background-color: #fffdee;
+}
+.about-hotel > .container {
     padding-top: 18px;
     padding-bottom: 20px;
-    background: #fffdee;
     position: relative;
 }
 .border-hotel-one,
 .border-hotel-two,
 .border-hotel-three,
 .border-hotel-four {
-    background: #DADADA;
+    background-color: #DADADA;
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
 }
@@ -43,7 +45,7 @@
     font-size: 12px;
     line-height: 1.25;
     letter-spacing: 0.02em;
-    color: #7A7A7A;
+    color: var(--primary-text-color);
     margin-bottom: 28px;
 }
 .img-hotel {
@@ -61,7 +63,7 @@
     font-size: 12px;
     line-height: 1.25;
     letter-spacing: 0.02em;
-    color: #C79002;
+    color: var(--first-gold-color);
     margin-top: 70px;
 }
 
@@ -76,22 +78,17 @@
     gap: 32px;
     margin-top: 297px;
 }
-.about-icon:hover {
-fill: #F3C653;
+.about-icon-hotel {
+  transition: fill var(--timing-function);
+}
+.about-icon-hotel:hover,
+.about-icon-hotel:focus,
+.about-icon-hotel:active {
+fill: var(--second-gold-color);
 }
 /* ------- Mob ------- */
-
-@media screen and (min-width: 320px) and (max-width: 413px) {
-  .about-rest {
-    width: 100%;
-  }
-  /* .about-arrow {
-    padding-left: 221px;
-  } */
-}
-
 @media screen and (min-width: 414px) {
-  .container-about-hotel {
+  .about-hotel > .container {
     width: 414px;
   }
   .about-hotel-paragraph {
@@ -104,13 +101,13 @@ fill: #F3C653;
 
 /* ------- Tab --------- */
 @media screen and (min-width: 1024px) {
-  .about-hotel {
-    padding-top: 120px;
+  
+   .about-hotel > .container {
+    min-width: 1024px;
+     padding-top: 120px;
     padding-bottom: 32px;
     padding-left: 47px;
-  }
-  .container-about-hotel {
-    width: 1024px;
+    padding-right: 47px;
   }
   .border-hotel-one {
     box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
@@ -165,8 +162,9 @@ fill: #F3C653;
     position: absolute;
     padding: 0;
     margin: 0;
+    gap: 40px;
     top: 948px;
-    left: 63px;
+    left: 47px;
   }
   .about-hotel-arrow {
     margin-top: 198px;
@@ -175,12 +173,12 @@ fill: #F3C653;
 
 /* ----- Desc ------*/
 @media screen and (min-width: 1280px) {
-  .about-hotel {
+  
+  .about-hotel > .container {
+    min-width: 1280px;
     padding-bottom: 50px;
     padding-left: 85px;
-  }
-  .container-about-hotel {
-    width: 1280px;
+    padding-right: 85px;
   }
   .border-hotel-two {
      box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
@@ -213,11 +211,12 @@ fill: #F3C653;
     top: -24px;
     left: 180px;
   }
-.about-hotel-img {
+.about-hotel-img  {
   top: 899px;
-  left: 101px;
+  left: 85px;
 }
 .about-hotel-arrow {
    margin-top: 115px;
   }
 }
+
