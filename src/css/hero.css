@@ -1,7 +1,7 @@
 /* <!-- -------- Hero -------- --> */
 
 .first-hero > .container {
-  width: 100%;
+  position: relative;
   padding-top: 181px;
   padding-bottom: 20px;
 }
@@ -58,10 +58,6 @@
       url(../img/hero1/pexels-chan-walrus-941861-mobile@2x.jpg);
   }
 }
-
-/* .first-hero > .container {
-  position: relative;
-} */
 
 .first-hero-title {
   font-family: 'Film P3';
