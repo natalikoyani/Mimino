@@ -8,10 +8,9 @@
 
 .first-hero {
   color: var(--primary-white-color);
-  max-width: 414px;
   height: auto;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
   background-color: rgba(0, 0, 0, 0.65);
   background-image: linear-gradient(
       to right,
@@ -155,7 +154,7 @@
 .maps-link:focus {
   color: #000000;
   background-color: #f3c653;
-  opacity: 50%;
+  opacity: 40%;
 }
 
 .mimiho-soc-list {
@@ -192,11 +191,11 @@
 }
 
 /*---------------MEDIA------------ */
-@media screen and (min-width: 414px) {
+/* @media screen and (min-width: 414px) {
   .container {
     max-width: 384px;
   }
-}
+} */
 
 @media screen and (min-width: 1024px) {
   .first-hero > .container {
@@ -207,7 +206,7 @@
     padding-right: 47px;
   }
   .first-hero {
-    max-width: 1024px;
+    /* max-width: 1024px; */
     background-image: linear-gradient(
         to right,
         rgba(0, 0, 0, 0.65),
@@ -289,14 +288,14 @@
 
 @media screen and (min-width: 1280px) {
   .first-hero > .container {
-    max-width: 1140px;
+    /* max-width: 1140px; */
     padding-top: 164px;
     padding-bottom: 65px;
     padding-left: 85px;
     padding-right: 85px;
   }
   .first-hero {
-    max-width: 1140px;
+    /* max-width: 1140px; */
     background-image: linear-gradient(
         to right,
         rgba(0, 0, 0, 0.65),
