@@ -27,10 +27,10 @@
 }
 
 :root {
-/* --------Перший фон-------- */
-  --first-background-color: #FFFDEE;
+  /* --------Перший фон-------- */
+  --first-background-color: #fffdee;
   /* -------Другий фон------- */
-  --second-background-color: #F0ECD6;
+  --second-background-color: #f0ecd6;
   /* Колір описових параграфів. */
   --primary-text-color: #7a7a7a;
   /* Золотий колір кнопок, посилань та логотипу. */
@@ -72,6 +72,7 @@ body {
 
 .header {
   position: absolute;
+  z-index: 1;
   left: 0;
   right: 0;
 }
@@ -215,7 +216,7 @@ body {
 }
 
 @media screen and (min-width: 414px) {
-  .container{
+  .container {
     width: 414px;
     padding-left: 15px;
     padding-right: 15px;
