@@ -6,13 +6,6 @@
     background-color: #FFFDEE;
 }
 
-.restaurant-menu-container {
-    width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;    
-}
-
 .restaurant-menu-title {
     margin-bottom: 16px;
     font-family: 'Times New Roman', sans-serif;
@@ -119,11 +112,7 @@
 /*----MOBILE----*/
 @media screen and (min-width: 414px) {
     
-    .restaurant-menu-container {
-      width: 414px;
-      padding-left: 15px;
-      padding-right: 15px;
-    }
+    
 }
 
 /*----TABLET----*/
@@ -134,12 +123,6 @@
         background-color: #F0ECD6;
     }
     
-    .restaurant-menu-container {
-      width: 1024px;
-      padding-left: 47px;
-      padding-right: 47px;
-    }   
-       
     .restaurant-menu-title {
         margin-bottom: 20px;
     }
@@ -180,12 +163,6 @@
 @media screen and (min-width: 1280px) {
     .restaurant-menu {
         padding-bottom: 60px;
-    }
-
-    .restaurant-menu-container {
-      width: 1280px;
-      padding-left: 85px;
-      padding-right: 85px;
     }
 
     .tables {
