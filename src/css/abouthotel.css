@@ -1,1 +1,222 @@
 /* <!-- --------About our hotel-------- --> */
+.about-hotel {
+   background-color: #fffdee;
+}
+.about-hotel > .container {
+    padding-top: 18px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.border-hotel-one,
+.border-hotel-two,
+.border-hotel-three,
+.border-hotel-four {
+    background-color: #DADADA;
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+}
+.about-hotel-paragraph {
+    max-width: 242px;
+    margin-left: auto;
+}
+.about-hotel-pre-title {
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.15;
+    color: #B4B4B4;
+    margin-bottom: 6px;
+    padding-left: 52px;
+}
+.about-hotel-title {
+    font-family: 'Film P3';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.07;
+    letter-spacing: 0.3em;
+    color: #494848;
+    margin-bottom: 16px;
+    padding-left: 125px;
+}
+.about-hotel-after-title {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+    margin-bottom: 28px;
+}
+.img-hotel {
+    margin-bottom: 32px;
+
+}
+.about-hotel-pexels {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 32px;   
+}
+.about-hotel-text {
+    width: 163px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: var(--first-gold-color);
+    margin-top: 70px;
+}
+
+.about-hotel-img {
+  position: absolute;
+    display: flex;
+    gap: 25px;
+    left: 0;
+}
+.about-hotel-arrow {
+    display: flex ;
+    gap: 32px;
+    margin-top: 297px;
+}
+.about-icon-hotel {
+  transition: fill var(--timing-function);
+}
+.about-icon-hotel:hover,
+.about-icon-hotel:focus,
+.about-icon-hotel:active {
+fill: var(--second-gold-color);
+}
+/* ------- Mob ------- */
+@media screen and (min-width: 414px) {
+  .about-hotel > .container {
+    width: 414px;
+  }
+  .about-hotel-paragraph {
+    margin-left: 142px;
+}
+  .img-hotel {
+    margin-left: 0;
+  }
+}
+
+/* ------- Tab --------- */
+@media screen and (min-width: 1024px) {
+  
+   .about-hotel > .container {
+    min-width: 1024px;
+     padding-top: 120px;
+    padding-bottom: 32px;
+    padding-left: 47px;
+    padding-right: 47px;
+  }
+  .border-hotel-one {
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+  }
+  .border-hotel-two {
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+  }
+  .about-hotel-paragraph {
+    max-width: 419px;
+    margin-left: 511px;
+}
+  .about-hotel-pre-title {
+    margin-bottom: 4px;
+    font-size: 32px;
+    line-height: 1.16;
+    padding-left: 112px;
+  }
+  .about-hotel-title {
+    margin-bottom: 24px;
+    font-size: 64px;
+    line-height: 1.08;
+    padding-left: 230px;
+  }
+
+  .about-hotel-after-title {
+    /* width: 439px; */
+    margin-bottom: 142px;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+  .about-hotel-pexels {
+    gap: 48px;
+  }
+  .img-hotel {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: -24px;
+    left: 112px;
+  }
+.about-hotel-pexels {
+    padding-left: 220px;
+}
+  .about-hotel-text {
+   width: 312px;
+    margin-top: 190px;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+  .about-hotel-img {
+    flex-direction: row-reverse;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    gap: 40px;
+    top: 948px;
+    left: 47px;
+  }
+  .about-hotel-arrow {
+    margin-top: 198px;
+  }
+}
+
+/* ----- Desc ------*/
+@media screen and (min-width: 1280px) {
+  
+  .about-hotel > .container {
+    min-width: 1280px;
+    padding-bottom: 50px;
+    padding-left: 85px;
+    padding-right: 85px;
+  }
+  .border-hotel-two {
+     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  }
+  .border-hotel-three {
+    border: 1px solid rgba(186, 186, 186, 0.4);
+  }
+  .about-hotel-paragraph {
+    max-width: 488px;
+    margin-left: 622px;
+}
+  .about-hotel-pre-title {
+    padding-left: 184px;
+  }
+  .about-hotel-title {
+    padding-left: 300px;
+  }
+  .about-hotel-after-title {
+    /* width: 518px; */
+    margin-bottom: 162px;
+  }
+   .about-hotel-text {
+    margin-bottom: 104px;
+  }
+  .about-hotel-pexels {
+     padding-left: 294px;
+     gap: 45px;
+  }
+  .img-hotel {
+    top: -24px;
+    left: 180px;
+  }
+.about-hotel-img  {
+  top: 899px;
+  left: 85px;
+}
+.about-hotel-arrow {
+   margin-top: 115px;
+  }
+}
+

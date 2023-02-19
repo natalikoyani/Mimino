@@ -1,16 +1,23 @@
 /* <!-- -------About our restaurant------- --> */
 .about-rest {
+   background-color: #fffdee;
+}
+.about-rest > .container {
     padding-top: 16px;
     padding-bottom: 20px;
-    background: #fffdee;
     position: relative;
 }
-.border {
-    background: #DADADA;
+.border-one,
+.border-two,
+.border-three,
+.border-four {
+    background-color: #DADADA;
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
 }
 .about-pre-title {
+    font-family: 'Times New Roman';
+    font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 1.15;
@@ -33,13 +40,13 @@
     font-size: 12px;
     line-height: 1.25;
     letter-spacing: 0.02em;
-    color: #7A7A7A;
+    color: var(--primary-text-color);
     margin-bottom: 28px;
 }
 .about-restaurant {
     margin-bottom: 32px;
 }
-.img {
+.img-about-rest {
  padding-left: 155px;
  margin-bottom: 32px;
 
@@ -50,56 +57,69 @@
     margin-bottom: 32px;   
 }
 .about-text {
-    max-width: 163px;
+    width: 163px;
     font-weight: 600;
     font-size: 12px;
     line-height: 1.25;
     letter-spacing: 0.02em;
-    color: #C79002;
+    color: var(--first-gold-color);
     margin-top: 70px;
 }
 
 .about-img {
+     position: absolute;
     display: flex;
     gap: 25px;
-    margin-left: 82px ;
-     width: 515px;
-     margin-bottom: 20px;
+    right: 0;
+  /* margin-bottom: 20px; */
+    
 }
 .about-arrow {
     display: flex ;
-    width: 98px;
     gap: 32px;
-    margin-left: 301px;
+    width: 98px;
+    margin-left: auto;
+    margin-top: 297px;
 }
-.about-icon:hover {
-fill: #F3C653;
+.about-icon-rest {
+  transition: fill var(--timing-function);
+}
+.about-icon-rest:hover,
+.about-icon-rest:focus,
+.about-icon-rest:active {
+fill: var(--second-gold-color);
 }
 /* ------- Mob ------- */
-
-@media screen and (min-width: 320px) and (max-width: 413px) {
-  /* .about-rest {
-    width: 100%;
-  } */
-  
-}
-
 @media screen and (min-width: 414px) {
-  .container {
+  .about-rest > .container {
     width: 414px;
   }
-  .img {
+  .img-about-rest {
     margin-left: 0;
+  }
+  .about-arrow {
+    margin-left: 285px;
+  }
+  .about-img {
+    left: 100px;
   }
 }
 
 /* ------- Tab --------- */
 @media screen and (min-width: 1024px) {
-  .about-rest {
+  
+  .about-rest > .container {
+    min-width: 1024px;
+     padding-top: 120px;
     padding-bottom: 32px;
+    padding-left: 47px;
+    padding-right: 60px;
   }
-  .container {
-    width: 1024px;
+  .border-one {
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+  }
+  .border-two {
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
   }
   .about-pre-title {
     margin-bottom: 4px;
@@ -114,16 +134,14 @@ fill: #F3C653;
 
   .about-after-title {
     width: 439px;
-    margin-right: 26px;
     margin-bottom: 142px;
     font-size: 16px;
     line-height: 1.25;
   }
   .about-pexels {
-    padding-left: 47px;
     gap: 48px;
   }
-  .img {
+  .img-about-rest {
     position: absolute;
     margin: 0;
     padding: 0;
@@ -132,52 +150,60 @@ fill: #F3C653;
   }
 
   .about-text {
-   max-width: 312px;
+   width: 312px;
     margin-top: 190px;
     font-size: 16px;
     line-height: 1.25;
   }
   .about-img {
-    width: 428px;
+    position: absolute;
+    padding: 0;
     margin: 0;
-    margin-left: 536px;
-     margin-bottom: 32px;
+     gap: 40px;
+    top: 948px;
+    left: 536px;
   }
+
   .about-arrow {
-    margin-left: 866px;
+    margin-top: 198px;
+    /* padding-left: 790px; */
+    margin-left: 819px;
   }
 }
 
 /* ----- Desc ------*/
 @media screen and (min-width: 1280px) {
-  .about-rest {
+  
+  .about-rest > .container {
+    min-width: 1280px;
     padding-bottom: 50px;
+    padding-left: 85px;
+    padding-right: 85px;
   }
-  .container {
-    width: 1280px;
+  .border-two {
+     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   }
   .about-after-title {
     width: 518px;
-    margin-right: 37px;
     margin-bottom: 162px;
   }
    .about-text {
     margin-bottom: 119px;
   }
   .about-pexels {
-    padding-left: 85px;
     gap: 32px;
   }
-  .img {
-    top: -83px;
+  .img-about-rest{
+    top: -33px;
     left: 640px;
   }
 .about-img {
-  width: 548px;
-  margin-left: 647px;
-   margin-bottom: 36px;
+  top: 903px;
+  left: 647px;
 }
 .about-arrow {
-   margin-left: 1097px;
+  /* padding-left: 980px; */
+   margin-top: 143px;
+   margin-left: 1012px;
   }
 }
