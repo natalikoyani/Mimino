@@ -73,6 +73,7 @@
   margin-left: -15px;
   margin-bottom: 20px;
 }
+
 .luxe-slaider-item {
   background-color: #dadada;
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
@@ -128,7 +129,7 @@
 
 @media screen and (min-width: 414px) {
   .luxe .container {
-    width: 414px;
+    max-width: 414px;
   }
 }
 
@@ -139,7 +140,7 @@
   }
   .luxe .container {
     position: relative;
-    width: 1024px;
+    max-width: 1024px;
     padding-left: 47px;
     padding-right: 47px;
   }
@@ -187,6 +188,8 @@
     margin-bottom: 32px;
   }
   .luxe-slaider-item {
+    width: 194px;
+    height: 194px;
     border-radius: 0;
   }
   .luxe-arrow {
@@ -207,7 +210,7 @@
   }
   .luxe .container {
     position: relative;
-    width: 1280px;
+    max-width: 1280px;
     padding-left: 85px;
     padding-right: 85px;
   }
@@ -245,7 +248,9 @@
     margin-bottom: 40px;
   }
   .luxe-slaider-item {
-    border-radius: 0;
+    width: 254px;
+    height: 254px;
+    border-radius: 2px;
   }
   .luxe-arrow {
   margin-left: 457px;
