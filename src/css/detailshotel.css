@@ -1,1 +1,263 @@
 /* <!-- ----------Details of our hotel---------- --> */
+.details-hotel {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../img/details-hotel/details-hotel-bg-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 24px;
+  padding-bottom: 40px;
+}
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .details-hotel {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url(../img/details-hotel/details-hotel-bg-mob-2x.jpg);
+  }
+}
+
+.details-hotel-logo {
+  font-family: 'Film P3';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.07;
+  letter-spacing: 0.3em;
+  color: var(--primary-white-color);
+  text-align: center;
+}
+.details-hotel-title {
+  width: 73px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--primary-white-color);
+  margin-left: 201px;
+  margin-right: 140px;
+  margin-top: 12px;
+  margin-bottom: 20px;
+}
+.details-hotel-text {
+  width: 243px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #bababa;
+  margin-bottom: 48px;
+}
+.details-hotel-list {
+  display: flex;
+}
+.details-hotel-img-food {
+  height: 270px;
+  margin-left: -15px;
+}
+.details-hotel-img-reception {
+  display: none;
+}
+.details-hotel-img-room {
+  margin-left: 5px;
+}
+.details-hotel-arrows {
+  display: flex;
+  margin-top: 16px;
+  margin-bottom: 32px;
+  margin-left: 248px;
+  fill: var(--primary-white-color);
+}
+
+.hotel-icon-arrow-left {
+  margin-right: 32px;
+  cursor: pointer;
+}
+.hotel-icon-arrow-left:hover,
+.hotel-icon-arrow-left:focus {
+  fill: var(--second-gold-color);
+}
+.hotel-icon-arrow-right {
+  cursor: pointer;
+}
+.hotel-icon-arrow-right:hover,
+.hotel-icon-arrow-right:focus {
+  fill: var(--second-gold-color);
+}
+.details-hotel-btn-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.details-hotel-button {
+  display: block;
+  width: 236px;
+  height: 48px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--second-gold-color);
+  background: rgba(0, 0, 0, 0.4);
+  border: 2px solid var(--primary-white-color);
+  border-radius: 25px;
+  margin-bottom: 16px;
+  transition: var(--timing-function);
+}
+.details-hotel-button:hover,
+.details-hotel-button:focus {
+  color: #000000;
+  background-color: var(--second-gold-color);
+}
+.details-hotel-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 236px;
+  height: 48px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--second-gold-color);
+  background: rgba(0, 0, 0, 0.4);
+  border: 2px solid var(--primary-white-color);
+  border-radius: 25px;
+  transition: var(--timing-function);
+}
+
+.details-hotel-link:hover,
+.details-hotel-link:focus {
+  color: #000000;
+  background-color: var(--second-gold-color);
+}
+/* -----MOBILE----- */
+@media screen and (min-width: 414px) {
+}
+/* -----TABLET----- */
+@media screen and (min-width: 1024px) {
+  .details-hotel > .container {
+    position: relative;
+  }
+  .details-hotel {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.76)),
+      url(../img/details-hotel/details-hotel-bg-tab.jpg);
+    padding-top: 48px;
+    padding-bottom: 40px;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .details-hotel {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.76),
+          rgba(0, 0, 0, 0.76)
+        ),
+        url(../img/details-hotel/details-hotel-bg-tab-2x.jpg);
+    }
+  }
+  .details-hotel-logo {
+    font-size: 64px;
+    text-align: justify;
+    margin-left: 497px;
+  }
+  .details-hotel-title {
+    width: 87px;
+    font-size: 24px;
+    margin-top: 16px;
+    margin-bottom: 8px;
+    text-align: justify;
+    margin-left: 612px;
+    margin-right: 231px;
+  }
+  .details-hotel-text {
+    width: 549px;
+    font-size: 16px;
+    margin-bottom: 40px;
+    margin-left: 150px;
+  }
+  .details-hotel-list {
+    gap: 34px;
+  }
+  .details-hotel-img-food {
+    height: 270px;
+    margin-left: 0;
+  }
+  .details-hotel-img-reception {
+    display: block;
+  }
+  .details-hotel-img-room {
+    margin-left: 0;
+  }
+  .details-hotel-arrows {
+    margin-top: 24px;
+    margin-bottom: 0;
+    margin-left: 560px;
+  }
+
+  .details-hotel-btn-link {
+    position: absolute;
+    top: 360px;
+    right: 47px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  .details-hotel-button {
+    display: block;
+  }
+  .details-hotel-link {
+  }
+}
+/* -----DESKTOP----- */
+@media screen and (min-width: 1280px) {
+  .details-hotel > .container {
+    padding-left: 52px;
+    padding-right: 85px;
+  }
+  .details-hotel {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url(../img/details-hotel/details-hotel-bg.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .details-hotel {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url(../img/details-hotel/details-hotel-bg-2x.jpg);
+    }
+  }
+  .details-hotel-logo {
+    margin-left: 688px;
+  }
+  .details-hotel-title {
+    margin-left: 803px;
+    margin-right: 253px;
+  }
+  .details-hotel-text {
+    width: 595px;
+    margin-left: 295px;
+  }
+  .details-hotel-list {
+    gap: 86px;
+  }
+  .details-hotel-arrows {
+    margin-left: 776px;
+  }
+  .details-hotel-btn-link {
+    position: absolute;
+    top: 360px;
+    right: 85px;
+  }
+}
