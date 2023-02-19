@@ -1,9 +1,9 @@
 /* ------- About our kitchen ------- */
 
-.container {
-  /* justify-content: center;
-    margin: 0 auto; */
-}
+/* .kitchen-section.container {
+  justify-content: center;
+    margin: 0 auto;
+} */
 .kitchen-section {
   padding-top: 16px;
   padding-bottom: 28px;
@@ -15,9 +15,6 @@
 .kitchen-about {
   width: 190px;
   margin-bottom: 12px;
-
-  /* font-family: 'Times New Roman';
-  font-style: normal; */
   font-weight: 400;
   font-size: 20px;
   line-height: 1.15;
@@ -26,11 +23,7 @@
 
 /* м_заголовок3 ----- MIMIHO ----- */
 .restoran-name {
-  /* position: absolute; */
   width: 127px;
-  /* height: 43px;
-  left: 15px;
-  top: 51px; */
   margin-bottom: 12px;
 
   font-family: 'Film P3';
@@ -54,13 +47,11 @@
   line-height: 1.25;
   letter-spacing: 0.02em;
 
-  color: #7a7a7a;
+  color: var(--primary-text-color);
+  /* color: #7a7a7a; */
 }
 
 .img-interrior {
-  /* justify-content: end; */
-  /* margin-right: auto; */
-  /* margin-left: auto; */
   padding-left: 155px;
   margin-bottom: 32px;
   /* width: 244px; */
@@ -80,13 +71,14 @@
   font-size: 12px;
   line-height: 1.25;
   letter-spacing: 0.02em;
-  color: #c79002;
+  /* color: #c79002; */
+  color: var(--first-gold-color);
 }
 
 /* ----- Mobile ----- */
 
 @media screen and (min-width: 320px) and (max-width: 414px) {
-  .container {
+  .kitchen-section.container {
     /* max-width: 328px; */
     width: 100%;
   }
@@ -97,7 +89,7 @@
 }
 
 @media screen and (min-width: 414px) {
-  .container {
+  .kitchen-section.container {
     width: 414px;
   }
   .kitchen-section {
@@ -111,7 +103,7 @@
 
 /* --------- Tablet ----------- */
 @media screen and (min-width: 1024px) {
-  .container {
+  .kitchen-section.container {
     width: 1024px;
   }
   .kitchen-section {
@@ -155,7 +147,7 @@
 
 /* -------- Desctop -------- */
 @media screen and (min-width: 1280px) {
-  .container {
+  .kitchen-section.container {
     width: 1280px;
   }
   .kitchen-section {
