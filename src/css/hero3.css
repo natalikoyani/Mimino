@@ -49,6 +49,12 @@
   gap: 8px;
   margin-top: 9px;
 }
+.location:hover,
+.location:focus{
+    color: #000000;
+  background-color: #f3c653;
+  opacity: 40%;
+}
 .location-icon {
   fill: #f3c653;
 }
