@@ -78,7 +78,7 @@ text-align: left;
   margin-bottom: 20px;
 }
 .room1-slaider-item {
-  width: 194px;
+  /* width: 194px; */
   background-color: #dadada;
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
@@ -132,8 +132,8 @@ text-align: left;
 }
 
 @media screen and (min-width: 414px) {
-  .room1 .container {
-    width: 414px;
+  .room1 > .container {
+    max-width: 414px;
   }
 }
 
@@ -142,9 +142,9 @@ text-align: left;
     padding-top: 62px;
     padding-bottom: 40px;
   }
-  .room1 .container {
+  .room1 > .container {
     position: relative;
-    width: 1024px;
+    max-width: 1024px;
     padding-left: 47px;
     padding-right: 47px;
   }
@@ -198,6 +198,8 @@ margin-left: 510px;
     margin-left: auto;
   }
   .room1-slaider-item {
+    width: 194px;
+    height: 194px;
     border-radius: 0;
   }
   .room1-arrow {
@@ -218,9 +220,9 @@ margin-left: 510px;
   .room1 {
     padding-top: 72px;
   }
-  .room1 .container {
+  .room1 > .container {
     position: relative;
-    width: 1280px;
+    max-width: 1280px;
     padding-left: 85px;
     padding-right: 142px;
   }
@@ -262,7 +264,7 @@ margin-left: 510px;
   .room1-slaider-item {
     width: 254px;
     height: 254px;
-    border-radius: 0;
+    border-radius: 2px;
   }
   .room1-arrow {
         margin-left: 562px;
