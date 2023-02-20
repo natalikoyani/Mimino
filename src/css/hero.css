@@ -76,7 +76,7 @@
 }
 
 .first-hero-subtitle {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: 16px;
   line-height: 1.25;
@@ -106,7 +106,7 @@
 
 .hero-button {
   color: #f3c653;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -133,7 +133,7 @@
   align-items: center;
   width: auto;
   padding: 8px 11px 9px 11px;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
