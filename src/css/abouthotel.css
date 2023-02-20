@@ -103,7 +103,7 @@ fill: var(--second-gold-color);
 @media screen and (min-width: 1024px) {
   
    .about-hotel > .container {
-    min-width: 1024px;
+    width: 1024px;
      padding-top: 120px;
     padding-bottom: 32px;
     padding-left: 47px;
@@ -133,13 +133,13 @@ fill: var(--second-gold-color);
   }
 
   .about-hotel-after-title {
-    /* width: 439px; */
     margin-bottom: 142px;
     font-size: 16px;
     line-height: 1.25;
   }
   .about-hotel-pexels {
     gap: 48px;
+    padding-left: 220px;
   }
   .img-hotel {
     position: absolute;
@@ -148,9 +148,6 @@ fill: var(--second-gold-color);
     top: -24px;
     left: 112px;
   }
-.about-hotel-pexels {
-    padding-left: 220px;
-}
   .about-hotel-text {
    width: 312px;
     margin-top: 190px;
@@ -175,7 +172,7 @@ fill: var(--second-gold-color);
 @media screen and (min-width: 1280px) {
   
   .about-hotel > .container {
-    min-width: 1280px;
+    width: 1280px;
     padding-bottom: 50px;
     padding-left: 85px;
     padding-right: 85px;
@@ -197,7 +194,6 @@ fill: var(--second-gold-color);
     padding-left: 300px;
   }
   .about-hotel-after-title {
-    /* width: 518px; */
     margin-bottom: 162px;
   }
    .about-hotel-text {
