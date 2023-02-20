@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/team-19/hotel.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ресторан</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    
+    <script type="module" crossorigin src="/team-19/assets/modal-b6842029.js"></script>
+    <link rel="stylesheet" href="/team-19/assets/modal-16d1aeff.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="header-nav">
+          <a href="./index.html" class="header-logo">MIMIH<span class="accent">O</span></a>
+          <ul class="header-list">
+            <li class="header-item">
+              <a href="./restaurant.html" class="header-link">Ресторан</a>
+            </li>
+            <li class="header-item">
+              <div class="header-box">
+                <a href="tel:0955559533" class="header-tel-link">
+                  <svg class="header-icon" width="24px" height="24px">
+                    <use href="/team-19/assets/icons-25890daf.svg#phone"></use>
+                  </svg>
+                  <span class="header-tel">095 555 95 33</span>
+                </a>
+              </div>
+            </li>
+            <li class="header-item">
+              <a href="./hotel.html" class="header-link">Готель</a>
+            </li>
+            <li class="header-item">
+              <div class="header-box">
+                <a href="tel:0668491089" class="header-tel-link">
+                  <svg class="header-icon" width="24px" height="24px">
+                    <use href="/team-19/assets/icons-25890daf.svg#phone"></use>
+                  </svg>
+                  <span class="header-tel">066 849 10 89</span>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-social-list">
+          <li class="header-social-item">
+            <a
+              href="https://www.instagram.com/"
+              class="header-social-link"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <svg class="header-social-icon" width="24px" height="24px">
+                <use href="/team-19/assets/icons-25890daf.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header-social-item">
+            <a
+              href="https://www.facebook.com/"
+              class="header-social-link"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <svg class="header-social-icon" width="24px" height="24px">
+                <use href="/team-19/assets/icons-25890daf.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header-social-item">
+            <a
+              href="https://web.telegram.org/"
+              class="header-social-link"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <svg class="header-social-icon" width="24px" height="24px">
+                <use href="/team-19/assets/icons-25890daf.svg#telegram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <!-- ---------Restaurant Page Hero--------- -->
+<div class="restaurant-hero-overlay">
+  <section class="first-hero">
+    <div class="container">
+      <h1 class="first-hero-title title">MIMIH<span class="accent">O</span></h1>
+      <h2 class="first-hero-subtitle">Ресторан</h2>
+      <p class="first-hero-text">смак життя 24/7</p>
+      <div class="mimiho-bottom-wrap">
+        <address class="mimiho-address">
+          <a
+            class="maps-link link"
+            href="https://goo.gl/maps/gUJNV8gQoXNjQtDE9"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+          >
+            <svg class="location-icon" width="24" height="24">
+              <use href="../img/icons.svg#location"></use>
+            </svg>
+            Україна, м. Полтава,<br />
+            вул. Маршала Бірюзова, 15</a
+          >
+        </address>
+        <div class="hero-button-wrap">
+          <button
+            type="button"
+            class="hero-button button js-open-modal"
+            data-modal="modaltable"
+          >
+            Забронювати столик
+          </button>
+          <button
+            type="button"
+            class="hero-button button js-open-modal"
+            data-modal="modalprice"
+          >
+            Переглянути меню
+          </button>
+        </div>
+      </div>
+      <div class="mimiho-soc">
+        <ul class="mimiho-soc-list list">
+          <li class="mimiho-soc-item">
+            <a
+              href="https://www.instagram.com/"
+              class="mimiho-soc-link link"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+            >
+              <svg class="mimiho-soc-icon" width="24" height="24">
+                <use href="../img/icons.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mimiho-soc-item">
+            <a
+              href="https://uk-ua.facebook.com/"
+              class="mimiho-soc-link link"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+            >
+              <svg class="mimiho-soc-icon" width="24" height="24">
+                <use href="../img/icons.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mimiho-soc-item">
+            <a
+              href="https://web.telegram.org/"
+              class="mimiho-soc-link link"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+            >
+              <svg class="mimiho-soc-icon" width="24" height="24">
+                <use href="../img/icons.svg#telegram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</div>
+
+      <!-- -------About our kitchen------- -->
+<body>
+  <section class="kitchen-section container">
+    <!-- прихований заголовок для краулерів -->
+    <h2 class="visually-hidden">About our kitchen</h2>
+    <p class="kitchen-about">Amet minim mollit non</p>
+
+    <!-- <p class="restoran-name"></p> -->
+    <h3 class="restoran-name">MIMIHO</h3>
+
+    <p class="interior-descript">
+      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+      Velit officia consequat duis enim velit mollit. Exercitation veniam
+      consequat sunt nostrud amet.
+    </p>
+
+    <div class="img-interrior">
+      <picture>
+        <source
+          srcset="/team-19/assets/restaurant-interior-desktop-f810d2d0.jpg 1x, /team-19/assets/restaurant-interior-desktop-2x-711a62fe.jpg 2x"
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="/team-19/assets/restaurant-interior-tablet-20b85179.jpg 1x, /team-19/assets/restaurant-interior-tablet-2x-a3888e93.jpg 2x"
+          media="(min-width: 1024px)"
+        />
+        <source
+          srcset="/team-19/assets/restaurant-interior-mobile-542a9c53.jpg 1x, /team-19/assets/restaurant-interior-mobile-2x-93988c13.jpg 2x"
+          media="(min-width: 320px)"
+        />
+        <img
+          src="/team-19/assets/restaurant-interior-mobile-542a9c53.jpg"
+          alt="restaurant-interior"
+          
+        />
+        <!-- width="460"
+          height="574" -->
+      </picture>
+      <!-- <img
+        src="./img/restaurant-interior-mobile.jpg"
+        alt="restaurant-interior"
+        srcset="
+          ./img/restaurant-interior-mobile.jpg    1x,
+          ./img/restaurant-interior-mobile.jpg-2x 2x
+        "
+        width="244"
+        height="322"
+      /> -->
+    </div>
+
+    <div class="oruri">
+      <picture>
+        <source
+          srcset="/team-19/assets/oruri-jacome-desktop-0c0fa980.jpg 1x, /team-19/assets/oruri-jacome-desktop-2x-99fae0e3.jpg 2x"
+          media="(min-width: 1280px)"
+        />
+        <source srcset="/team-19/assets/oruri-jacome-tablet-5c302d26.jpg 1x, /team-19/assets/oruri-jacome-tablet-2x-9c3919fe.jpg 2x"
+      media="(min-width: 1024px)"
+      />
+        <source 
+        srcset="/team-19/assets/oruri-jacome-mobile-cabec1d7.jpg 1x, /team-19/assets/oruri-jacome-mobile-2x-b0b0ab9f.jpg 2x"
+          media="(min-width: 320px)"
+          />
+
+        <img
+          src="/team-19/assets/oruri-jacome-mobile-cabec1d7.jpg"
+          alt="oruri-jacome"
+          srcset="
+            ./img/oruri-jacome-mobile.jpg    1x,
+            ./img/oruri-jacome-mobile.jpg-2x 2x
+          "
+          
+        />
+        <!-- width="200"
+          height="278" -->
+          <!-- width="460"
+          height="574" -->
+      </picture>
+      <p class="oruri-descript">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit. Exercitation
+        veniam consequat sunt nostrud amet.
+      </p>
+    </div>
+  </section>
+</body>
+
+      <!-- ------------Restaurant Page Menu------------ -->
+
+<section class="restaurant-menu">
+  <div class="container">
+    <h4 class="restaurant-menu-title">МЕНЮ РЕСТОРАНУ</h4>
+
+    <div class="tables">
+      <table class="restaurant-menu-table">
+        <tr class="restaurant-menu-row">
+          <th class="restaurant-menu-cell">Гарячі страви</th>
+          <th class=""></th>
+          <th class=""></th>
+        </tr>
+        <tr class="restaurant-menu-row">
+          <td class="restaurant-menu-cell1">Борщ з телятини з квасолею</td>
+          <td class="restaurant-menu-cell2" rowspan="2">400 г</td>
+          <td class="restaurant-menu-cell3" rowspan="2">240 грн</td>
+        </tr>
+        <tr class="restaurant-menu-row">
+          <td class="restaurant-menu-cell4">
+            Телятина, картопля, капуста, морква, цибуля, квасоля, часник,
+            помідори, зелень, сметана
+          </td>
+        </tr>
+        <tr class="restaurant-menu-row">
+          <td class="restaurant-menu-cell1">Суп сирний з куркою</td>
+          <td class="restaurant-menu-cell2" rowspan="2">400 г</td>
+          <td class="restaurant-menu-cell3" rowspan="2">200 грн</td>
+        </tr>
+        <tr class="restaurant-menu-row">
+          <td class="restaurant-menu-cell4">
+            Курятина, картопля, морква, цибуля, печериці, сир м’який, зелень
+          </td>
+        </tr>
+        <tr class="restaurant-menu-row">
+          <td class="restaurant-menu-cell1">Паста карбонара</td>
+          <td class="restaurant-menu-cell2" rowspan="2">350 г</td>
+          <td class="restaurant-menu-cell3" rowspan="2">430 грн</td>
+        </tr>
+        <tr class="restaurant-menu-row">
+          <td class="restaurant-menu-cell4">
+            Паста тальятеле, бекон, вершки, сир пармезан, яйце, зелень
+          </td>
+        </tr>
+        <tr class="restaurant-menu-row">
+          <td class="restaurant-menu-cell1">Стейк зі свинини</td>
+          <td class="restaurant-menu-cell2" rowspan="2">400 г</td>
+          <td class="restaurant-menu-cell3" rowspan="2">500 грн</td>
+        </tr>
+        <tr class="restaurant-menu-row">
+          <td class="restaurant-menu-cell4">
+            Свиняча вирізка, спеціі, подається з соусом солодкий чилі та овочами
+          </td>
+        </tr>
+        <tr class="restaurant-menu-row">
+          <td class="restaurant-menu-cell1">Горбуша в соусі з білого вина</td>
+          <td class="restaurant-menu-cell2" rowspan="2">400 г</td>
+          <td class="restaurant-menu-cell3" rowspan="2">400 грн</td>
+        </tr>
+        <tr class="restaurant-menu-row">
+          <td class="restaurant-menu-cell4 last-cell">
+            Ніжна горбуша, вершковий соус на основі білого вина
+          </td>
+        </tr>
+        <tr class="restaurant-menu-row">
+          <th class="restaurant-menu-cell">Гарніри та закуски</th>
+          <th class=""></th>
+          <th class=""></th>
+        </tr>
+        <tr class="restaurant-menu-row">
+          <td class="restaurant-menu-cell1">Запечені овочі</td>
+          <td class="restaurant-menu-cell2" rowspan="2">200 г</td>
+          <td class="restaurant-menu-cell3" rowspan="2">230 грн</td>
+        </tr>
+        <tr class="restaurant-menu-row">
+          <td class="restaurant-menu-cell4">
+            Кабачок, перець, помідор, баклажан
+          </td>
+        </tr>
+        <tr class="restaurant-menu-row">
+          <td class="restaurant-menu-cell1">Картопля фрі</td>
+          <td class="restaurant-menu-cell2" rowspan="2">150 г</td>
+          <td class="restaurant-menu-cell3" rowspan="2">160 грн</td>
+        </tr>
+        <tr class="restaurant-menu-row">
+          <td class="restaurant-menu-cell4">Картопля, соус томатний</td>
+        </tr>
+        <tr class="restaurant-menu-row">
+          <td class="restaurant-menu-cell1">Картопля по-селянськи</td>
+          <td class="restaurant-menu-cell2" rowspan="2">150 г</td>
+          <td class="restaurant-menu-cell3" rowspan="2">160 грн</td>
+        </tr>
+        <tr class="restaurant-menu-row">
+          <td class="restaurant-menu-cell4">
+            Картопля, спеції, соус пікантний
+          </td>
+        </tr>
+        <tr class="restaurant-menu-row">
+          <td class="restaurant-menu-cell1">Хрумкі соління з бочки</td>
+          <td class="restaurant-menu-cell2" rowspan="2">250 г</td>
+          <td class="restaurant-menu-cell3" rowspan="2">350 грн</td>
+        </tr>
+        <tr class="restaurant-menu-row">
+          <td class="restaurant-menu-cell4">
+            Огірок солений, помідор квашений, квашена капуста, морква
+            по-корейські
+          </td>
+        </tr>
+        <tr class="restaurant-menu-row">
+          <td class="restaurant-menu-cell1">Крильця курячі в медовому соусі</td>
+          <td class="restaurant-menu-cell2" rowspan="2">400 г</td>
+          <td class="restaurant-menu-cell3" rowspan="2">420 грн</td>
+        </tr>
+        <tr class="restaurant-menu-row">
+          <td class="restaurant-menu-cell4 last-cell">
+            Крильця курячі, гірчично-медовий соус, подається з морквою, селерою
+            і соусом блючиз
+          </td>
+        </tr>
+      </table>
+
+      <table class="restaurant-menu-table table-two">
+        <tr class="restaurant-menu-row">
+          <th class="restaurant-menu-cell">Салати</th>
+          <th class=""></th>
+          <th class=""></th>
+        </tr>
+        <tr class="restaurant-menu-row">
+          <td class="restaurant-menu-cell1">Цезар з куркою</td>
+          <td class="restaurant-menu-cell2" rowspan="2">230 г</td>
+          <td class="restaurant-menu-cell3" rowspan="2">450 грн</td>
+        </tr>
+        <tr class="restaurant-menu-row">
+          <td class="restaurant-menu-cell4">
+            Куряче філе, листя салату, помідори чері, сир пармезан, грінки, соус
+            цезар
+          </td>
+        </tr>
+        <tr class="restaurant-menu-row">
+          <td class="restaurant-menu-cell1">Цезар з креветками</td>
+          <td class="restaurant-menu-cell2" rowspan="2">230 г</td>
+          <td class="restaurant-menu-cell3" rowspan="2">300 грн</td>
+        </tr>
+        <tr class="restaurant-menu-row">
+          <td class="restaurant-menu-cell4">
+            Тигрові креветки, листя салату, помідори чері, сир пармезан, грінки,
+            соус цезар
+          </td>
+        </tr>
+        <tr class="restaurant-menu-row">
+          <td class="restaurant-menu-cell1">Грецький салат</td>
+          <td class="restaurant-menu-cell2" rowspan="2">230 г</td>
+          <td class="restaurant-menu-cell3" rowspan="2">280 грн</td>
+        </tr>
+        <tr class="restaurant-menu-row">
+          <td class="restaurant-menu-cell4">
+            Свіжі огірок, помідор, болгарський перець, оливки, сир бринза, листя
+            салату, соус
+          </td>
+        </tr>
+        <tr class="restaurant-menu-row">
+          <td class="restaurant-menu-cell1">М’ясний салат</td>
+          <td class="restaurant-menu-cell2" rowspan="2">230 г</td>
+          <td class="restaurant-menu-cell3" rowspan="2">300 грн</td>
+        </tr>
+        <tr class="restaurant-menu-row">
+          <td class="restaurant-menu-cell4 last-cell">
+            Куряче філе або свиняча вирізка, свіжі огірок, помідор, болгарський
+            перець, соус ранч
+          </td>
+        </tr>
+        <tr class="restaurant-menu-row">
+          <th class="restaurant-menu-cell">Десерти</th>
+          <th class=""></th>
+          <th class=""></th>
+        </tr>
+        <tr class="restaurant-menu-row">
+          <td class="restaurant-menu-cell1 another-cell">Торт наполеон</td>
+          <td class="restaurant-menu-cell2">230 г</td>
+          <td class="restaurant-menu-cell3">300 грн</td>
+        </tr>
+        <tr class="restaurant-menu-row">
+          <td class="restaurant-menu-cell1 another-cell">Торт маковий</td>
+          <td class="restaurant-menu-cell2">230 г</td>
+          <td class="restaurant-menu-cell3">300 грн</td>
+        </tr>
+        <tr class="restaurant-menu-row">
+          <td class="restaurant-menu-cell1">Тірамісу</td>
+          <td class="restaurant-menu-cell2">120 г</td>
+          <td class="restaurant-menu-cell3">260 грн</td>
+        </tr>
+        <tr class="restaurant-menu-row">
+          <th class="restaurant-menu-cell">Напої</th>
+          <th class=""></th>
+          <th class=""></th>
+        </tr>
+        <tr class="restaurant-menu-row">
+          <td class="restaurant-menu-cell1 another-cell">Чай чорний/зелений</td>
+          <td class="restaurant-menu-cell2">500 мл</td>
+          <td class="restaurant-menu-cell3">100 грн</td>
+        </tr>
+        <tr class="restaurant-menu-row">
+          <td class="restaurant-menu-cell1 another-cell">Еспресо</td>
+          <td class="restaurant-menu-cell2">30 мл</td>
+          <td class="restaurant-menu-cell3">100 грн</td>
+        </tr>
+        <tr class="restaurant-menu-row">
+          <td class="restaurant-menu-cell1 another-cell">Американо</td>
+          <td class="restaurant-menu-cell2">150 мл</td>
+          <td class="restaurant-menu-cell3">100 грн</td>
+        </tr>
+        <tr class="restaurant-menu-row">
+          <td class="restaurant-menu-cell1 another-cell">Капучино</td>
+          <td class="restaurant-menu-cell2">200 мл</td>
+          <td class="restaurant-menu-cell3">160 грн</td>
+        </tr>
+        <tr class="restaurant-menu-row">
+          <td class="restaurant-menu-cell1">Лате</td>
+          <td class="restaurant-menu-cell2">200 мл</td>
+          <td class="restaurant-menu-cell3">160 грн</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="button-reserve">
+      <button
+        type="button"
+        class="menu-restaurant-btn js-open-modal"
+        data-modal="modaltable"
+      >
+        Забронювати столик
+      </button>
+    </div>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <a href="./index.html" class="footer-logo">MIMIHO</a>
+        <div class="footer-box">
+          <ul class="footer-nav-list">
+            <li class="footer-nav-item">
+              <a href="./index.html" class="footer-nav-link">Головна</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="./restaurant.html" class="footer-nav-link">Ресторан</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="./hotel.html" class="footer-nav-link">Готель</a>
+            </li>
+          </ul>
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a
+                href="https://www.instagram.com/"
+                class="footer-social-link"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <span class="footer-social-text">Instagram</span>
+                <svg class="footer-social-icon" width="24px" height="24px">
+                  <use href="/team-19/assets/icons-25890daf.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a
+                href="https://www.facebook.com/"
+                class="footer-social-link"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <span class="footer-social-text">Facebook</span>
+                <svg class="footer-social-icon" width="24px" height="24px">
+                  <use href="/team-19/assets/icons-25890daf.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a
+                href="https://web.telegram.org/"
+                class="footer-social-link"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <span class="footer-social-text">Telegram</span>
+                <svg class="footer-social-icon" width="24px" height="24px">
+                  <use href="/team-19/assets/icons-25890daf.svg#telegram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- ------------Book Table Modal window------------ -->
+<section class="book-table-modal modal" data-modal="modaltable">
+  <div class="modal-container book-table">
+    <button type="button" class="modal-close js-modal-close">
+      <svg class="modal-close-icon" width="24" height="24">
+        <use href="/team-19/assets/icons-25890daf.svg#modal-close"></use>
+      </svg>
+    </button>
+
+    <h2 class="modal-title">ЗАБРОНЮВАТИ СТОЛИК</h2>
+
+    <form class="modal-form">
+      <div class="book-table-wrap">
+        <div class="modal-field">
+          <input
+            type="text"
+            class="modal-input"
+            name="book-table-user-name"
+            id="book-table-user-name"
+            placeholder="Ваше ім’я"
+            required
+          />
+
+          <label for="book-table-user-name" class="modal-input-label"
+            >На кого забронювати столик?</label
+          >
+        </div>
+
+        <div class="modal-field">
+          <input
+            type="tel"
+            class="modal-input"
+            name="book-table-user-phone"
+            id="book-table-user-phone"
+            placeholder="+38 (___) ___-__-__"
+            pattern="^[\+]?3?[\s]?8?[\s]?\(?0\d{2}?\)?[\s]?\d{3}[\s|-]?\d{2}[\s|-]?\d{2}$"
+            required
+          />
+          <label for="book-table-user-phone" class="modal-input-label"
+            >Номер телефону</label
+          >
+        </div>
+        <div class="modal-field">
+          <div class="select-wrap">
+            <select
+              class="modal-input"
+              name="book-table-person"
+              id="book-table-person"
+            >
+              <option>2</option>
+              <option>4</option>
+              <option>8</option>
+              <option>10</option>
+            </select>
+          </div>
+          <label for="book-table-person" class="modal-input-label"
+            >Столик на яку кількість осіб?</label
+          >
+        </div>
+
+        <div class="modal-field">
+          <div class="select-wrap">
+            <select
+              class="modal-input"
+              name="book-table-date"
+              id="book-table-date"
+            >
+              <option value="today">Сьогодні</option>
+              <option value="tomorrow">Завтра</option>
+              <option value="day-after-tomorrow">Післязавтра</option>
+            </select>
+          </div>
+          <label for="book-table-date" class="modal-input-label"
+            >На яку дату бронювати?</label
+          >
+        </div>
+      </div>
+
+      <div class="modal-submit">
+        <button type="submit" class="modal-btn">ОФОРМИТИ БРОНЮВАННЯ</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+    <div class="modal-overlay js-overlay-modal"></div>
+    
+  </body>
+</html>
