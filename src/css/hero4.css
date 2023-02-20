@@ -1,10 +1,10 @@
 /* <!-- ---------Room Page Hero--------- --> */
 
 .room-hero {
+  position: relative;
   padding-bottom: 18px;
   padding-top: 286px;
-  background-color: #595959;
-  /* background-image: url(../img/room_hero_bg_mob_1x.jpg); */
+  background-image: url();
 }
 
 .room-hero-arrows {
@@ -36,9 +36,52 @@
 
 .room-hero-text {
   margin-bottom: 17px;
+  margin-right: 59px;
   font-weight: 700;
   font-size: 12px;
   line-height: 1.25;
   letter-spacing: 0.02em;
   color: var(--primary-white-color);
+}
+
+.room-hero-address {
+  position: absolute;
+  top: 0;
+  right: 12px;
+  width: 210px;
+  padding: 8px 3px 9px 34px;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  color: #e5e5e5;
+  border: 1px solid rgba(243, 198, 83, 0.7);
+  border-radius: 2px;
+}
+
+.room-hero-address. > .maps-link {
+}
+
+.room-hero-address .location-icon {
+  position: absolute;
+  transform: translateX(-28px) translateY(5px);
+}
+
+.room-hero-soc-item:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.room-hero-button {
+  position: absolute;
+  bottom: 40px;
+  right: 74px;
+  padding: 14px 35px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: var(--second-gold-color);
+  background: rgba(0, 0, 0, 0.4);
+  border: 2px solid var(--primary-white-color);
+  border-radius: 25px;
 }

@@ -13,6 +13,8 @@
 }
 
 .kitchen-about {
+  font-family: 'Times New Roman';
+  /* font-style: normal; */
   width: 190px;
   margin-bottom: 12px;
   font-weight: 400;
@@ -85,7 +87,6 @@
   .kitchen-section {
     width: 100%;
   }
-  
 }
 
 @media screen and (min-width: 414px) {
@@ -167,7 +168,6 @@
     top: -33px;
     left: 640px;
   }
-
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
