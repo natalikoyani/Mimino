@@ -77,6 +77,17 @@
   color: var(--first-gold-color);
 }
 
+.pexels-slider {
+  margin-top: 32px;
+  margin-bottom: 72px;
+}
+.slider-pic {
+  display: flex;
+  gap: 24px;
+  justify-content: end;
+}
+
+
 /* ----- Mobile ----- */
 
 @media screen and (min-width: 320px) and (max-width: 414px) {
@@ -106,6 +117,7 @@
 @media screen and (min-width: 1024px) {
   .kitchen-section.container {
     width: 1024px;
+    padding-top: 120px;
   }
   .kitchen-section {
     width: 100%;
@@ -144,6 +156,15 @@
     font-size: 16px;
     line-height: 1.25;
   }
+
+  .pexels-slider {
+    margin-top: -28px;
+    margin-bottom: 96px;
+  }
+  .slider-pic {
+    /* display: flex; */
+    gap: 40px;
+  }
 }
 
 /* -------- Desctop -------- */
@@ -167,6 +188,11 @@
     padding: 0;
     top: -33px;
     left: 640px;
+  }
+
+  .pexels-slider {
+    margin-top: -151px;
+    margin-bottom: 104px;
   }
 }
 
