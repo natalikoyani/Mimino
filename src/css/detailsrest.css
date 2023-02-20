@@ -87,6 +87,7 @@
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.02em;
+  text-align: center;
   color: var(--second-gold-color);
   background: rgba(0, 0, 0, 0.4);
   border: 2px solid var(--primary-white-color);
