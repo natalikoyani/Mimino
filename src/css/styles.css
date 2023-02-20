@@ -77,7 +77,6 @@ body {
   right: 0;
 }
 .header > .container {
-  display: flex;
   padding-top: 16px;
   align-items: center;
   justify-content: center;
@@ -93,6 +92,7 @@ body {
   line-height: 1.08;
   letter-spacing: 0.3em;
   color: var(--primary-white-color);
+  margin-right: auto;
 }
 .header-logo:hover,
 .header-logo:focus {
@@ -220,6 +220,9 @@ body {
     width: 414px;
     padding-left: 15px;
     padding-right: 15px;
+  }
+  .header> .container {
+    display: flex;
   }
   .header-logo {
     margin-right: 52px;
