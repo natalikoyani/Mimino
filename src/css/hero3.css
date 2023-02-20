@@ -49,8 +49,18 @@
   gap: 8px;
   margin-top: 9px;
 }
+.location:hover,
+.location:focus{
+    color: #000000;
+  background-color: #f3c653;
+  opacity: 40%;
+}
 .location-icon {
   fill: #f3c653;
+}
+.location:hover .location-icon,
+.location:focus .location-icon {
+  fill: #000000;
 }
 .hero-title {
   font-family: 'Film P3';
@@ -99,6 +109,12 @@
 .soc-list {
   display: flex;
   gap: 20px;
+}
+.soc-link:hover .soc-icon,
+.soc-link:focus .soc-icon {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
 }
 .local-div > div {
   display: flex;
