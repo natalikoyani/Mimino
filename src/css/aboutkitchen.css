@@ -104,6 +104,10 @@
 .icon-arrow:active {
 fill: var(--second-gold-color);
 }
+.slider-arrow-btn {
+  border: none;
+  background-color: transparent;
+}
 
 
 /* ----- Mobile ----- */
