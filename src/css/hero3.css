@@ -37,7 +37,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 210px;
+  padding: 8px 11px 9px 11px;
+  width: auto;
   height: 48px;
   border: 1px solid rgba(243, 198, 83, 0.7);
   border-radius: 2px;
@@ -48,6 +49,7 @@
   color: #e5e5e5;
   gap: 8px;
   margin-top: 9px;
+  padding-right: ;
 }
 .location:hover,
 .location:focus{
