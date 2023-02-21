@@ -91,7 +91,10 @@
 
 .slider-arrows{
   padding-right: 28px;
-  text-align: end;
+  /* text-align: end; */
+  display: flex;
+  gap: 40px;
+  justify-content: end;
 }
 .icon-arrow {
   transition: fill var(--timing-function);
