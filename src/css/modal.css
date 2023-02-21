@@ -2,11 +2,10 @@
 
 .modal-overlay {
   /* Скрываем подложку  */
+  position: fixed;
   opacity: 0;
   visibility: hidden;
-
-  position: fixed;
-
+ 
   top: 0;
   left: 0;
   width: 100%;
@@ -22,6 +21,7 @@
   /* Скрываем окна  */
   opacity: 0;
   visibility: hidden;
+  overflow: scroll;
 
   /*  Установаем ширину окна  */
   width: 100vw;
@@ -246,10 +246,10 @@ select {
 @media screen and (min-width: 414px) {
   .modal-container {
     position: absolute;
-    top: 50%;
+    top: 20px;
     left: 50%;
     width: 414px;
-    transform: translate(-50%, -50%) scale(1);
+    transform: translateX(-50%) scale(1);
     transition: transform var(--timing-function);
   }
 
@@ -268,6 +268,9 @@ select {
 
 @media screen and (min-width: 1024px) {
   .modal-container {
+    top: 50%;
+    width: 414px;
+    transform: translate(-50%, -50%) scale(1);
     width: 712px;
     padding: 60px;
   }
