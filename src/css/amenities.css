@@ -16,6 +16,7 @@
   line-height: 1.25;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  margin-bottom: 32px;
 }
 .amenities-text {
   font-weight: 700;
@@ -24,12 +25,14 @@
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
+.amenities-item {
+  margin-bottom: 32px;
+}
 .amenities-item-title {
   font-family: 'Times New Roman', sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.16;
-  margin-top: 32px;
   margin-bottom: 16px;
 }
 .amenities-text-item {
@@ -39,8 +42,6 @@
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
   margin-top: 16px;
-}
-.amenities-room-btn-link {
 }
 .amenities-button {
   font-family: inherit;
@@ -53,7 +54,6 @@
   border: 1px solid var(--second-gold-color);
   border-radius: 25px;
   padding: 20px 42px;
-  margin-top: 32px;
   margin-bottom: 20px;
   cursor: pointer;
   transition: var(--timing-function);
@@ -99,6 +99,9 @@
     padding-top: 50px;
     padding-bottom: 40px;
   }
+  .amenities-item:last-child {
+    margin-bottom: 40px;
+  }
   .amenities-item-text {
     display: flex;
     gap: 80px;
@@ -123,7 +126,6 @@
     font-size: 24px;
     line-height: 1.2;
     padding: 18px 38px;
-    margin-top: 40px;
     margin-bottom: 32px;
   }
   .amenities-link-room {
