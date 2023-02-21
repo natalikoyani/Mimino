@@ -90,7 +90,7 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.08;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.2em;
   color: var(--primary-white-color);
   margin-right: auto;
 }
@@ -226,6 +226,7 @@ body {
   }
   .header-logo {
     margin-right: 52px;
+    letter-spacing: 0.3em;
   }
   .header-item:nth-child(odd) {
     margin-right: 6px;
