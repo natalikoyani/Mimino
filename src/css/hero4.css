@@ -2,32 +2,9 @@
 
 .room-hero {
   position: relative;
-  padding-bottom: 118px;
+  padding-bottom: 18px;
   padding-top: 286px;
-  background-image: linear-gradient(
-      180deg,
-      #000000 0%,
-      rgba(0, 0, 0, 0.55) 10%,
-      rgba(0, 0, 0, 0) 20%
-    ),
-    url(./img/room_hero_bg_mob_1x.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .room-hero {
-    background-image: linear-gradient(
-        180deg,
-        #000000 0%,
-        rgba(0, 0, 0, 0.55) 10%,
-        rgba(0, 0, 0, 0) 20%
-      ),
-      url(./img/room_hero_bg_mob_2x.jpg);
-  }
+  background-image: url();
 }
 
 .room-hero-arrows {
@@ -43,11 +20,9 @@
 }
 
 .golden-arrows:hover,
-.golden-arrows:focus {
+.golden-arrows:focus,
+.golden-arrows:active {
   fill: var(--primary-white-color);
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
 }
 
 .room-hero-title {
@@ -69,55 +44,37 @@
   color: var(--primary-white-color);
 }
 
-.room-hero .maps-link {
-  display: flex;
-  align-items: center;
-  width: fit-content;
-  padding: 8px 5px 8px 8px;
+.room-hero-address {
+  position: absolute;
+  top: 0;
+  right: 12px;
+  width: 210px;
+  padding: 8px 3px 9px 34px;
   font-style: normal;
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.25;
   letter-spacing: 0.01em;
   color: #e5e5e5;
   border: 1px solid rgba(243, 198, 83, 0.7);
   border-radius: 2px;
-  transition: color var(--timing-function),
-    background-color var(--timing-function), opacity var(--timing-function);
 }
 
-.maps-link:hover,
-.maps-link:focus {
-  color: #000000;
-  background-color: #f3c653;
-  opacity: 40%;
+.room-hero-address. > .maps-link {
 }
 
-.location-icon {
-  width: 20px;
-  height: 20px;
-}
-
-.room-hero-soc {
+.room-hero-address .location-icon {
   position: absolute;
-}
-
-.room-hero-soc-item {
+  transform: translateX(-28px) translateY(5px);
 }
 
 .room-hero-soc-item:not(:last-child) {
   margin-bottom: 5px;
 }
 
-.room-hero-soc-item:hover,
-.room-hero-soc-item:focus {
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
-}
-
 .room-hero-button {
   position: absolute;
+  bottom: 40px;
+  right: 74px;
   padding: 14px 35px;
   font-weight: 700;
   font-size: 16px;
@@ -127,152 +84,4 @@
   background: rgba(0, 0, 0, 0.4);
   border: 2px solid var(--primary-white-color);
   border-radius: 25px;
-  transition: background-color var(--timing-function),
-    border-color var(--timing-function);
-}
-
-.room-hero-button:hover,
-.room-hero-button:focus {
-  background-color: var(--primary-white-color);
-  border-color: var(--second-gold-color);
-}
-
-/* ---------------Mobile-------------- */
-
-@media screen and (max-width: 414px) {
-  .room-hero-address {
-    right: 15px;
-    top: 60px;
-  }
-
-  .room-hero-button {
-    transform: translate(55px, 20px);
-  }
-}
-
-@media screen and (min-width: 414px) and (max-width: 1023.5px) {
-  .room-hero-address {
-    transform: translateY(-519px) translateX(173px);
-  }
-
-  .room-hero-button {
-    transform: translate(85px, 20px);
-  }
-}
-
-@media screen and (max-width: 1023.5px) {
-  .room-hero-address {
-    position: absolute;
-  }
-}
-
-/* --------------Tablet--------------- */
-
-@media screen and (min-width: 1024px) {
-  .room-hero {
-    background-image: linear-gradient(
-        180deg,
-        #000000 0%,
-        rgba(0, 0, 0, 0.55) 10%,
-        rgba(0, 0, 0, 0) 20%
-      ),
-      url(./img/room_hero_bg_tab_1x.jpg);
-  }
-
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .room-hero {
-      background-image: linear-gradient(
-          180deg,
-          #000000 0%,
-          rgba(0, 0, 0, 0.55) 10%,
-          rgba(0, 0, 0, 0) 20%
-        ),
-        url(./img/room_hero_bg_tab_2x.jpg);
-    }
-  }
-
-  .room-hero {
-    padding-top: 341px;
-    padding-bottom: 18px;
-  }
-
-  .room-hero-title {
-    margin-bottom: 24px;
-    font-size: 36px;
-  }
-
-  .room-hero-text {
-    margin-bottom: 24px;
-    width: 400px;
-    font-size: 16px;
-  }
-
-  .room-hero .maps-link {
-    padding: 8px;
-    font-size: 16px;
-  }
-
-  .location-icon {
-    width: 24px;
-    height: 24px;
-  }
-
-  .room-hero-soc {
-    display: flex;
-    gap: 23px;
-    position: absolute;
-    transform: translate(325px, -40px);
-  }
-
-  .room-hero-button {
-    transform: translate(695px, -100px);
-  }
-}
-
-/* ---------------Desktop-------------- */
-
-@media screen and (min-width: 1280px) {
-  .room-hero {
-    background-image: linear-gradient(
-        180deg,
-        #000000 0%,
-        rgba(0, 0, 0, 0.55) 10%,
-        rgba(0, 0, 0, 0) 20%
-      ),
-      url(./img/room_hero_bg_desk_1x.jpg);
-  }
-
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .room-hero {
-      background-image: linear-gradient(
-          180deg,
-          #000000 0%,
-          rgba(0, 0, 0, 0.55) 10%,
-          rgba(0, 0, 0, 0) 20%
-        ),
-        url(./img/room_hero_bg_desk_2x.jpg);
-    }
-  }
-
-  .room-hero {
-    padding-top: 353px;
-    padding-bottom: 48px;
-  }
-
-  .room-hero-text {
-    margin-bottom: 0;
-  }
-
-  .room-hero-address,
-  .room-hero-soc {
-    display: none;
-  }
-
-  .room-hero-button {
-    transform: translate(875px, -100px);
-  }
 }
