@@ -177,7 +177,9 @@
   justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.mimiho-soc-icon {
+  fill: var(--second-gold-color);
+}
 .mimiho-soc-link:hover .mimiho-soc-icon,
 .mimiho-soc-link:focus .mimiho-soc-icon {
   -webkit-transform: scale(1.2);
@@ -257,7 +259,7 @@
   .mimiho-bottom-wrap {
     display: flex;
     align-items: flex-end;
-    margin-bottom: 61px;
+    margin-bottom: 25px;
   }
   .maps-link {
     padding: 8px 16px;

@@ -110,6 +110,9 @@
   display: flex;
   gap: 20px;
 }
+.soc-icon {
+  fill: var(--second-gold-color);
+}
 .soc-link:hover .soc-icon,
 .soc-link:focus .soc-icon {
   -webkit-transform: scale(1.2);

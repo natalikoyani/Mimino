@@ -110,7 +110,9 @@
   -ms-transform: scale(1.2);
   transform: scale(1.2);
 }
-
+.room-hero-soc-icon {
+  fill: var(--second-gold-color);
+}
 .room-hero-button {
   position: absolute;
   padding: 14px 35px;
