@@ -74,6 +74,9 @@
 .white-arrows:focus,
 .white-arrows:active {
   fill: var(--second-gold-color);
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .rest-details-btn {

@@ -1,12 +1,11 @@
 /* <!-- ---------Room Page Hero--------- --> */
 
 /* исправить ссылки */
-/* исправить кнопку на линк */
 /* ховер на соц иконки */
 
 .room-hero {
   position: relative;
-  padding-bottom: 18px;
+  padding-bottom: 118px;
   padding-top: 286px;
   background-image: linear-gradient(
       180deg,
@@ -49,6 +48,9 @@
 .golden-arrows:hover,
 .golden-arrows:focus {
   fill: var(--primary-white-color);
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .room-hero-title {
@@ -99,12 +101,22 @@
   height: 20px;
 }
 
+.room-hero-soc {
+  position: absolute;
+}
+
+.room-hero-soc-item {
+}
+
 .room-hero-soc-item:not(:last-child) {
   margin-bottom: 5px;
 }
 
 .room-hero-soc-item:hover,
 .room-hero-soc-item:focus {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .room-hero-button {
@@ -137,7 +149,7 @@
   }
 
   .room-hero-button {
-    transform: translate(55px, -80px);
+    transform: translate(55px, 20px);
   }
 }
 
@@ -147,7 +159,7 @@
   }
 
   .room-hero-button {
-    transform: translate(85px, -80px);
+    transform: translate(85px, 20px);
   }
 }
 
