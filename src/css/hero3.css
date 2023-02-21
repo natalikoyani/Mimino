@@ -37,7 +37,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 210px;
+  padding: 8px 11px 9px 11px;
   height: 48px;
   border: 1px solid rgba(243, 198, 83, 0.7);
   border-radius: 2px;
@@ -130,6 +130,24 @@
   .hotel-page-hero > .container {
     max-width: 414px;
   }
+  .hotel-page-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 4, 4, 0.65)),
+      url(../img/hotel-hero-table1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    background-size: cover;}
+      @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hotel-page-hero {
+      background-image: linear-gradient(
+          rgba(0, 4, 4, 0.65),
+          rgba(0, 4, 4, 0.65)
+        ),
+        url(../img/hotel-hero-desk2x.jpg);
+    }
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -139,7 +157,7 @@ line-height: calc(138/128);
   }
   .hotel-page-hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 4, 4, 0.65)),
-      url(../img/hotel-hero-table1x.jpg);
+      url(../img/hotel-hero-desk1x.jpg);
     background-repeat: no-repeat;
     background-position: center;
     margin: 0 auto;
@@ -155,7 +173,7 @@ line-height: calc(138/128);
           rgba(0, 4, 4, 0.65),
           rgba(0, 4, 4, 0.65)
         ),
-        url(../img/hotel-hero-table2x.jpg);
+        url(../img/hotel-hero-desk2x.jpg);
     }
   }
 
