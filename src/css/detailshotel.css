@@ -26,18 +26,16 @@
   line-height: 1.07;
   letter-spacing: 0.3em;
   color: var(--primary-white-color);
-  text-align: center;
+  margin-left: 143px;
 }
 .details-hotel-title {
-  width: 73px;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--primary-white-color);
-  margin-left: 201px;
-  margin-right: 140px;
+  margin-left: 186px;
   margin-top: 12px;
   margin-bottom: 20px;
 }
@@ -53,23 +51,20 @@
 }
 .details-hotel-list {
   display: flex;
-}
-.details-hotel-img-food {
-  height: 270px;
+  /* justify-content: space-between; */
+  column-gap: 20px;
   margin-left: -15px;
 }
 .details-hotel-img-reception {
   display: none;
 }
-.details-hotel-img-room {
-  margin-left: 5px;
-}
 .details-hotel-arrows {
   display: flex;
-  margin-top: 16px;
-  margin-bottom: 32px;
-  margin-left: 248px;
   column-gap: 32px;
+  margin-bottom: 32px;
+  justify-content: flex-end;
+  margin-right: 25px;
+  margin-top: 16px;
   cursor: pointer;
   fill: var(--primary-white-color);
 }
@@ -159,17 +154,13 @@
   }
   .details-hotel-logo {
     font-size: 64px;
-    text-align: justify;
-    margin-left: 497px;
+    margin-left: 515px;
   }
   .details-hotel-title {
-    width: 87px;
     font-size: 24px;
     margin-top: 16px;
     margin-bottom: 8px;
-    text-align: justify;
     margin-left: 612px;
-    margin-right: 231px;
   }
   .details-hotel-text {
     width: 549px;
@@ -178,27 +169,20 @@
     margin-left: 150px;
   }
   .details-hotel-list {
-    gap: 34px;
-  }
-  .details-hotel-img-food {
-    height: 270px;
+    column-gap: 34px;
     margin-left: 0;
   }
   .details-hotel-img-reception {
     display: block;
   }
-  .details-hotel-img-room {
-    margin-left: 0;
-  }
   .details-hotel-arrows {
     margin-top: 24px;
     margin-bottom: 0;
-    margin-left: 560px;
+    margin-right: 265px;
   }
-
   .details-hotel-btn-link {
     position: absolute;
-    top: 360px;
+    top: 351px;
     right: 47px;
     display: flex;
     flex-direction: column;
@@ -231,25 +215,24 @@
     }
   }
   .details-hotel-logo {
-    margin-left: 688px;
+    margin-left: 710px;
   }
   .details-hotel-title {
     margin-left: 803px;
-    margin-right: 253px;
   }
   .details-hotel-text {
     width: 595px;
     margin-left: 295px;
   }
   .details-hotel-list {
-    gap: 86px;
+    column-gap: 86px;
   }
   .details-hotel-arrows {
-    margin-left: 776px;
+    margin-right: 269px;
   }
   .details-hotel-btn-link {
     position: absolute;
-    top: 360px;
+    top: 351px;
     right: 85px;
   }
 }
