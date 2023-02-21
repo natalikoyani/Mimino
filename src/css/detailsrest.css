@@ -8,7 +8,6 @@
   background-position: center;
   background-size: cover;
 }
-
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
@@ -22,7 +21,6 @@
   margin-left: 125px;
   margin-bottom: 48px;
 }
-
 .rest-details-uppertext {
   margin-bottom: 12px;
   font-family: 'Film P3', sans-serif;
@@ -32,7 +30,6 @@
   letter-spacing: 0.3em;
   color: var(--primary-white-color);
 }
-
 .rest-details-title {
   margin-bottom: 20px;
   font-size: 20px;
@@ -40,7 +37,6 @@
   letter-spacing: 0.02em;
   color: var(--primary-white-color);
 }
-
 .rest-details-lowertext {
   font-weight: 600;
   font-size: 12px;
@@ -48,7 +44,6 @@
   letter-spacing: 0.02em;
   color: #bababa;
 }
-
 .rest-details-list {
   display: flex;
   justify-content: space-between;
@@ -57,23 +52,23 @@
   margin-right: -15px;
   margin-left: 25px;
 }
-
 .rest-details-arrows {
   display: flex;
   column-gap: 34px;
   margin-bottom: 40px;
   margin-left: 25px;
 }
-
 .white-arrows {
   fill: var(--primary-white-color);
   transition: fill var(--timing-function);
 }
-
 .white-arrows:hover,
 .white-arrows:focus,
 .white-arrows:active {
   fill: var(--second-gold-color);
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .rest-details-btn {
@@ -87,6 +82,7 @@
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.02em;
+  text-align: center;
   color: var(--second-gold-color);
   background: rgba(0, 0, 0, 0.4);
   border: 2px solid var(--primary-white-color);
@@ -94,28 +90,22 @@
   transition: background-color var(--timing-function),
     border-color var(--timing-function);
 }
-
 .rest-details-btn:first-child {
   margin-bottom: 16px;
 }
-
 .rest-details-btn:hover,
 .rest-details-btn:focus,
 .rest-details-btn:active {
   background-color: var(--primary-white-color);
   border-color: var(--second-gold-color);
 }
-
 /* --------------Mobile---------------- */
-
 @media screen and (max-width: 1023.5px) {
   .mob-hidden-img {
     display: none;
   }
 }
-
 /* --------------Tablet---------------- */
-
 @media screen and (min-width: 1024px) {
   .rest-details {
     padding-top: 48px;
@@ -141,27 +131,22 @@
     padding-right: 47px;
     position: relative;
   }
-
   .rest-details-textwrap {
     margin-left: 231px;
     margin-right: 99px;
     margin-bottom: 40px;
   }
-
   .rest-details-uppertext {
     margin-bottom: 16px;
     font-size: 64px;
   }
-
   .rest-details-title {
     margin-bottom: 8px;
     font-size: 24px;
   }
-
   .rest-details-lowertext {
     font-size: 16px;
   }
-
   .rest-details-list {
     justify-content: space-between;
     column-gap: 35px;
@@ -169,20 +154,16 @@
     margin-right: 0;
     margin-left: 266px;
   }
-
   .rest-details-arrows {
     margin-left: 266px;
     margin-bottom: 0;
   }
-
   .rest-details-btnwrap {
     position: absolute;
     transform: translateY(-176px);
   }
 }
-
 /* --------------Desktop---------------- */
-
 @media screen and (min-width: 1280px) {
   .rest-details {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
@@ -205,7 +186,6 @@
     padding-left: 85px;
     padding-right: 52px;
   }
-
   .rest-details-textwrap {
     margin-left: 253px;
     margin-right: 280px;
