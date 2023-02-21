@@ -7,57 +7,6 @@
   overflow: hidden;
 }
 
-.first-hero {
-  color: var(--primary-white-color);
-  height: auto;
-  background-color: rgba(0, 0, 0, 0.65);
-  background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.65),
-      rgba(0, 0, 0, 0.65)
-    ),
-    url('../img/hero1/pexels-pixabay-260922-mobile.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  flex-grow: 1;
-}
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .first-hero {
-    background-color: rgba(0, 0, 0, 0.65);
-    background-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0.65),
-        rgba(0, 0, 0, 0.65)
-      ),
-      url(../img/hero1/pexels-pixabay-260922-mobile@2x.jpg);
-  }
-}
-.restaurant-hero-overlay > .first-hero {
-  background-color: rgba(0, 0, 0, 0.65);
-  background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.65),
-      rgba(0, 0, 0, 0.65)
-    ),
-    url('../img/hero1/pexels-chan-walrus-941861-mobile.jpg');
-}
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .restaurant-hero-overlay > .first-hero {
-    background-color: rgba(0, 0, 0, 0.65);
-    background-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0.65),
-        rgba(0, 0, 0, 0.65)
-      ),
-      url(../img/hero1/pexels-chan-walrus-941861-mobile@2x.jpg);
-  }
-}
-
 .first-hero-title {
   font-family: 'Film P3';
   font-style: normal;
@@ -193,48 +142,6 @@
     padding-top: 188px;
     padding-bottom: 15px;
   }
-  .first-hero {
-    background-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0.65),
-        rgba(0, 0, 0, 0.65)
-      ),
-      url('../img/hero1/pexels-pixabay-260922-tablet.jpg');
-  }
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .first-hero {
-      background-image: linear-gradient(
-          to right,
-          rgba(0, 0, 0, 0.65),
-          rgba(0, 0, 0, 0.65)
-        ),
-        url(../img/hero1/pexels-pixabay-260922-tablet@2x.jpg);
-    }
-  }
-  .restaurant-hero-overlay > .first-hero {
-    background-color: rgba(0, 0, 0, 0.65);
-    background-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0.65),
-        rgba(0, 0, 0, 0.65)
-      ),
-      url('../img/hero1/pexels-chan-walrus-941861-tablet.jpg');
-  }
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .restaurant-hero-overlay > .first-hero {
-      background-color: rgba(0, 0, 0, 0.65);
-      background-image: linear-gradient(
-          to right,
-          rgba(0, 0, 0, 0.65),
-          rgba(0, 0, 0, 0.65)
-        ),
-        url(../img/hero1/pexels-chan-walrus-941861-tablet@2x.jpg);
-    }
-  }
   .first-hero-title {
     font-size: 128px;
     line-height: 1.08;
@@ -278,18 +185,164 @@
     padding-top: 164px;
     padding-bottom: 65px;
   }
+
+  .first-hero-title {
+    margin-bottom: 32;
+  }
+  .first-hero-subtitle {
+    margin-bottom: 64px;
+  }
+  .hero-button-wrap {
+    gap: 60px;
+  }
+  .hero-button,
+  .hero-button-link {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  .mimiho-bottom-wrap {
+    margin-bottom: 0;
+  }
+  .mimiho-soc-list {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 414px) {
   .first-hero {
+    color: var(--primary-white-color);
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.65);
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url('../img/hero1/pexels-pixabay-260922-mobile.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-grow: 1;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .first-hero {
+      background-color: rgba(0, 0, 0, 0.65);
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../img/hero1/pexels-pixabay-260922-mobile@2x.jpg);
+    }
+  }
+  .restaurant-hero-overlay > .first-hero {
+    background-color: rgba(0, 0, 0, 0.65);
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url('../img/hero1/pexels-chan-walrus-941861-mobile.jpg');
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .restaurant-hero-overlay > .first-hero {
+      background-color: rgba(0, 0, 0, 0.65);
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../img/hero1/pexels-chan-walrus-941861-mobile@2x.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: 415px) and (max-width: 1024px) {
+  .first-hero {
+    color: var(--primary-white-color);
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.65);
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url('../img/hero1/pexels-pixabay-260922-tablet.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-grow: 1;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .first-hero {
+      background-color: rgba(0, 0, 0, 0.65);
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../img/hero1/pexels-pixabay-260922-tablet@2x.jpg);
+    }
+  }
+  .restaurant-hero-overlay > .first-hero {
+    background-color: rgba(0, 0, 0, 0.65);
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url('../img/hero1/pexels-chan-walrus-941861-tablet.jpg');
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .restaurant-hero-overlay > .first-hero {
+      background-color: rgba(0, 0, 0, 0.65);
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../img/hero1/pexels-chan-walrus-941861-tablet@2x.jpg);
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .mimiho-address {
+    position: absolute;
+    right: 15px;
+    top: 64px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .first-hero {
+    color: var(--primary-white-color);
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.65);
     background-image: linear-gradient(
         to right,
         rgba(0, 0, 0, 0.65),
         rgba(0, 0, 0, 0.65)
       ),
       url('../img/hero1/pexels-pixabay-260922-desktop.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-grow: 1;
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .first-hero {
+      background-color: rgba(0, 0, 0, 0.65);
       background-image: linear-gradient(
           to right,
           rgba(0, 0, 0, 0.65),
@@ -319,34 +372,6 @@
         ),
         url(../img/hero1/pexels-chan-walrus-941861-desktop@2x.jpg);
     }
-  }
-  .first-hero-title {
-    margin-bottom: 32;
-  }
-  .first-hero-subtitle {
-    margin-bottom: 64px;
-  }
-  .hero-button-wrap {
-    gap: 60px;
-  }
-  .hero-button,
-  .hero-button-link {
-    padding-left: 35px;
-    padding-right: 35px;
-  }
-  .mimiho-bottom-wrap {
-    margin-bottom: 0;
-  }
-  .mimiho-soc-list {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 1023px) {
-  .mimiho-address {
-    position: absolute;
-    right: 15px;
-    top: 64px;
   }
 }
 
