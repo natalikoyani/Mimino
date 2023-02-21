@@ -4,7 +4,7 @@
   padding-top: 24px;
   padding-bottom: 40px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-    url(../img/rest_details_bg_mob_1x.jpg);
+    url(./img/rest_details_bg_mob_1x.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -14,7 +14,7 @@
   (min-resolution: 2dppx) {
   .rest-details {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url(../img/rest_details_bg_mob_2x.jpg);
+      url(./img/rest_details_bg_mob_2x.jpg);
   }
 }
 
@@ -125,7 +125,7 @@
     padding-top: 48px;
     padding-bottom: 47px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url(../img/rest_details_bg_tab_1x.jpg);
+      url(./img/rest_details_bg_tab_1x.jpg);
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -136,7 +136,7 @@
           rgba(0, 0, 0, 0.65),
           rgba(0, 0, 0, 0.65)
         ),
-        url(../img/rest_details_bg_tab_2x.jpg);
+        url(./img/rest_details_bg_tab_2x.jpg);
     }
   }
 
@@ -190,7 +190,7 @@
 @media screen and (min-width: 1280px) {
   .rest-details {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url(../img/rest_details_bg_desk_1x.jpg);
+      url(./img/rest_details_bg_desk_1x.jpg);
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -201,7 +201,7 @@
           rgba(0, 0, 0, 0.65),
           rgba(0, 0, 0, 0.65)
         ),
-        url(../img/rest_details_bg_desk_2x.jpg);
+        url(./img/rest_details_bg_desk_2x.jpg);
     }
   }
 
