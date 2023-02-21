@@ -54,6 +54,7 @@
 .hero-button,
 .hero-button-link {
   color: #f3c653;
+  font-family: inherit;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
