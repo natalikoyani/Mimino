@@ -16,6 +16,10 @@
     color: #000000;
 }
 
+.restaurant-menu-table {
+    border-spacing: 0;
+}
+
 .table-two {
     margin-bottom: 32px;
 }
@@ -85,6 +89,14 @@
     padding: 0 0 11px 0;
 }
 
+.cell-weight {
+    padding-bottom: 11px;
+}
+
+.cell-price {
+    padding-bottom: 11px;
+}
+
 .menu-restaurant-btn {
     display: block;
     margin: 0 auto;
@@ -147,6 +159,10 @@
         padding: 0 47px 0 40px;
         width: 139px;
     }
+
+    .cell-weight {
+        padding-bottom: 11px;
+    }
     
     .button-reserve {
         position: relative;        
@@ -198,7 +214,11 @@
     .last-cell {
         padding: 4px 0 0 0;
     }
+    .last-cell-two {
+padding-bottom: 10px;
 }
+}
+
 /*
 Для перевірки таблиць
 
