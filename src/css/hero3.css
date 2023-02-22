@@ -6,8 +6,6 @@
   background-position: center;
   margin: 0 auto;
   background-size: cover;
-  padding-top: 181px;
-  padding-bottom: 20px;
 }
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
@@ -17,37 +15,37 @@
       url(../img/hotel-hero-mob2x.jpg);
   }
 }
-
-.hotel-page-hero > .container {
+.hotel-page-hero> .container{
   position: relative;
-  /* padding-left: 15px;
-  padding-right: 15px; */
-  margin: 0 auto;
+  padding-top: 181px;
+  padding-bottom: 20px;
+  overflow: hidden;
 }
-
 .center {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+@media screen and (max-width: 1023px) {
+  .hero-address {
+    position: absolute;
+    right: 15px;
+    top: 64px;
+  }
+}
 .location {
-  position: absolute;
-  right: 15px;
-  top: -120px;
   display: flex;
-  justify-content: center;
   align-items: center;
   padding: 8px 11px 9px 11px;
   height: 48px;
   border: 1px solid rgba(243, 198, 83, 0.7);
   border-radius: 2px;
+  font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: calc(15 / 12);
   letter-spacing: 0.01em;
   color: #e5e5e5;
-  gap: 8px;
-  margin-top: 9px;
 }
 .location:hover,
 .location:focus{
@@ -109,6 +107,7 @@
 .soc-list {
   display: flex;
   gap: 20px;
+  margin-top: 58px;
 }
 .soc-icon {
   fill: var(--second-gold-color);
@@ -127,9 +126,6 @@
 }
 
 @media screen and (min-width: 414px) {
-  .hotel-page-hero > .container {
-    max-width: 414px;
-  }
   .hotel-page-hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 4, 4, 0.65)),
       url(../img/hotel-hero-table1x.jpg);
@@ -160,9 +156,10 @@ line-height: calc(138/128);
       url(../img/hotel-hero-desk1x.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    margin: 0 auto;
     background-size: cover;
-    padding-top: 186px;
+  }
+  .hotel-page-hero> .container{
+    padding-top: 188px;
     padding-bottom: 15px;
   }
   @media (min-device-pixel-ratio: 2),
@@ -176,36 +173,17 @@ line-height: calc(138/128);
         url(../img/hotel-hero-desk2x.jpg);
     }
   }
-
   .location {
-    position: relative;
-    top: 0;
-    left: 0;
-    font-weight: 400;
     font-size: 16px;
-    line-height: calc(20 / 16);
-    letter-spacing: 0.01em;
-    color: #e5e5e5;
-    /* width: 285px;
-    height: 56px; */
-  }
-  .hotel-page-hero > .container {
-    max-width: 930px;
-    padding-left: 47px;
-    padding-right: 47px;
-    margin: 0 auto;
   }
   .table-button {
+    margin-left: 144px;
     margin-right: 40px;
   }
   .local-div {
     width: 100%;
     display: flex;
     align-items: flex-end;
-    justify-content: space-between;
-  }
-  .center {
-    margin-bottom: 25px;
   }
   .local-div div {
     display: flex;
@@ -219,6 +197,9 @@ line-height: calc(138/128);
   }
   .hero-sub-title {
     margin-bottom: 218px;
+  }
+  .soc-list {
+    margin-top: 25px;
   }
 }
 @media screen and (min-width: 1280px) {
