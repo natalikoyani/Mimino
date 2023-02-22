@@ -117,7 +117,7 @@ right: 64px;
   display: flex;
   align-items: center;
   width: 280px;
-  height: 315px;
+  /* height: 315px; */
   min-width: 0;
   gap: 25px;
   bottom: 50px;
