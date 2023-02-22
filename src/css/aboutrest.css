@@ -47,15 +47,6 @@ right: 64px;
 }
 
 /* Стрелка влево */
-.slick-arrow.slick-prev {
-  right: 114px;
-  background: url(../img/aboutrest/cil_arrow-left.svg) no-repeat;
-}
-/* Стрелка вправо */
-.slick-arrow.slick-next {
-  right: 50px;
-  background: url(../img/aboutrest/cil_arrow-right.svg) 0 0 no-repeat;
-}
 
 /* ===================================== */
 .about-rest {
