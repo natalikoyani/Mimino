@@ -1,9 +1,8 @@
 /* <!-- -------- Hero -------- --> */
-
-.first-hero > .container {
-  position: relative;
+.first-hero {
   padding-top: 181px;
   padding-bottom: 20px;
+  position: relative;
   overflow: hidden;
 }
 
@@ -139,7 +138,7 @@
 
 /*---------------MEDIA------------ */
 @media screen and (min-width: 1024px) {
-  .first-hero > .container {
+  .first-hero {
     padding-top: 188px;
     padding-bottom: 15px;
   }
@@ -182,7 +181,7 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .first-hero > .container {
+  .first-hero {
     padding-top: 164px;
     padding-bottom: 65px;
   }
