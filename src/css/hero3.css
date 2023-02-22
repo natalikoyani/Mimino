@@ -20,8 +20,8 @@
 
 .hotel-page-hero > .container {
   position: relative;
-  padding-left: 15px;
-  padding-right: 15px;
+  /* padding-left: 15px;
+  padding-right: 15px; */
   margin: 0 auto;
 }
 
@@ -186,8 +186,8 @@ line-height: calc(138/128);
     line-height: calc(20 / 16);
     letter-spacing: 0.01em;
     color: #e5e5e5;
-    width: 285px;
-    height: 56px;
+    /* width: 285px;
+    height: 56px; */
   }
   .hotel-page-hero > .container {
     max-width: 930px;
