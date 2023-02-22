@@ -15,11 +15,13 @@
       url(../img/hotel-hero-mob2x.jpg);
   }
 }
-.hotel-page-hero> .container{
-  position: relative;
+.hotel-page-hero {
   padding-top: 181px;
   padding-bottom: 20px;
   overflow: hidden;
+}
+.hotel-page-hero> .container{
+  position: relative;
 }
 .center {
   display: flex;
@@ -30,7 +32,7 @@
   .hero-address {
     position: absolute;
     right: 15px;
-    top: 64px;
+    top: -115px;
   }
 }
 .location {
@@ -157,7 +159,7 @@ line-height: calc(138/128);
     background-position: center;
     background-size: cover;
   }
-  .hotel-page-hero> .container{
+  .hotel-page-hero {
     padding-top: 188px;
     padding-bottom: 15px;
   }
@@ -224,7 +226,7 @@ line-height: calc(138/128);
         url(../img/hotel-hero-desk2x.jpg);
     }
   }
-  .hotel-page-hero> .container{
+  .hotel-page-hero {
     padding-bottom: 64px;
   }
   .hero3-button {

@@ -288,7 +288,7 @@ body {
     display: flex;
   }
   .header-logo {
-    margin-right: 52px;
+    margin-right: 78px;
     letter-spacing: 0.3em;
   }
   .header-item:nth-child(odd) {

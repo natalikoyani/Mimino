@@ -62,10 +62,10 @@
 .oruri {
   display: flex;
   gap: 20px;
+  align-items: center;
 }
 .oruri-descript {
   width: 163px;
-  margin-top: 70px;
 
   font-family: 'Montserrat';
   font-style: normal;
@@ -175,7 +175,6 @@ fill: var(--second-gold-color);
 
   .oruri-descript {
     width: 312px;
-    margin-top: 190px;
     font-size: 16px;
     line-height: 1.25;
   }
