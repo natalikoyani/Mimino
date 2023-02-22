@@ -5,7 +5,7 @@
   position: fixed;
   opacity: 0;
   visibility: hidden;
- 
+
   top: 0;
   left: 0;
   width: 100%;
@@ -177,7 +177,7 @@ select {
   margin-bottom: 20px;
 }
 
-  .book-room-user-contacts > .modal-field:first-child > .modal-input {
+.book-room-user-contacts > .modal-field:first-child > .modal-input {
   border-radius: 2px;
 }
 
@@ -246,10 +246,10 @@ select {
 @media screen and (min-width: 414px) {
   .modal-container {
     position: absolute;
-    top: 20px;
+    top: 50%;
     left: 50%;
     width: 414px;
-    transform: translateX(-50%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
     transition: transform var(--timing-function);
   }
 
@@ -266,11 +266,18 @@ select {
   }
 }
 
+@media screen and (min-width: 414px) and (max-height: 800px) and (max-width: 1023px) {
+  .modal-container {
+    top: 20px;
+    transform: translate(-50%, 0) scale(1);
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .modal-container {
-    top: 50%;
+    /* top: 50%; */
     width: 414px;
-    transform: translate(-50%, -50%) scale(1);
+    /* transform: translate(-50%, -50%) scale(1); */
     width: 712px;
     padding: 60px;
   }
@@ -382,5 +389,12 @@ select {
   .book-table-wrap > .modal-field {
     height: calc((100% - 20px) / 2);
     width: calc((100% - 16px) / 2);
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-height: 660px) {
+  .modal-container {
+    top: 20px;
+    transform: translate(-50%, 0) scale(1);
   }
 }
