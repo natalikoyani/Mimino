@@ -92,12 +92,12 @@ body {
 
 .header {
   position: absolute;
+  padding-top: 16px;
   z-index: 1;
   left: 0;
   right: 0;
 }
 .header > .container {
-  padding-top: 16px;
   align-items: center;
   justify-content: center;
 }
@@ -190,15 +190,15 @@ body {
 
 /* -----------Footer----------- */
 
-.footer > .container {
-  display: flex;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  align-items: center;
-  justify-content: center;
-}
 .footer {
   background: #0e0c07;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.footer > .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .footer-logo {
   font-family: 'Film P3';
@@ -281,6 +281,9 @@ body {
     padding-left: 15px;
     padding-right: 15px;
   }
+  .header {
+    padding-top: 24px;
+  }
   .header > .container {
     display: flex;
   }
@@ -340,6 +343,8 @@ body {
   }
   .footer {
     background: #000000;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
   .footer-logo {
     font-size: 64px;
@@ -415,10 +420,6 @@ body {
   }
   .footer {
     background: #0e0c07;
-  }
-  .footer > .container {
-    padding-top: 80px;
-    padding-bottom: 80px;
   }
   .footer-logo {
     margin-right: 231px;
