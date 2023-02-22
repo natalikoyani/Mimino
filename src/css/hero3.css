@@ -176,8 +176,10 @@ line-height: calc(138/128);
     height: 56px;
     font-size: 16px;
   }
+  .hero3-button {
+    margin-left: 141px;
+  }
   .table-button {
-    margin-left: 144px;
     margin-right: 40px;
   }
   .local-div {
@@ -225,13 +227,10 @@ line-height: calc(138/128);
   .hotel-page-hero> .container{
     padding-bottom: 64px;
   }
+  .hero3-button {
+    margin-left: 279px;
+  }
   .soc-list {
     display: none;
-  }
-  .hotel-page-hero > .container {
-    max-width: 1110px;
-    padding-left: 85px;
-    padding-right: 85px;
-    margin: 0 auto;
   }
 }
