@@ -67,9 +67,7 @@ select {
   width: 100vw;
 
   position: fixed;
-  /* top: 0; */
-  /* left: 0; */
-  /* z-index: 1; */
+
   width: 100vw;
   height: 100vh;
   padding: 0 15px;
@@ -275,9 +273,7 @@ select {
 
 @media screen and (min-width: 1024px) {
   .modal-container {
-    /* top: 50%; */
     width: 414px;
-    /* transform: translate(-50%, -50%) scale(1); */
     width: 712px;
     padding: 60px;
   }
