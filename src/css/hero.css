@@ -47,7 +47,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
-  margin-bottom: 61px;
+  margin-bottom: 58px;
   justify-content: center;
 }
 
@@ -65,7 +65,7 @@
   border-radius: 25px;
   padding: 14px 24px;
   width: auto;
-  height: auto;
+  height: 48px;
   transition: background-color var(--timing-function),
     border var(--timing-function);
 }
