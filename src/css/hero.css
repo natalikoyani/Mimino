@@ -71,6 +71,11 @@
     border var(--timing-function);
 }
 
+.hero-button-link {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
 .hero-button:hover,
 .hero-button:focus,
 .hero-button-link:hover,
