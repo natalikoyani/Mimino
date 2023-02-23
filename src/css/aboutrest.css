@@ -60,7 +60,7 @@ right: 64px;
 .border-two,
 .border-three,
 .border-four {
-  box-shadow: 2px 2px 40px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 2px 2px 30px 2px rgba(0, 0, 0, 0.25);
 }
 .about-pre-title {
   font-family: 'Times New Roman';
