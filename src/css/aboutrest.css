@@ -176,6 +176,15 @@ right: 64px;
   .slider .slick-arrow{
     bottom: 30px;
   }
+  .arrowperv{
+  bottom: -20px;
+right: 64px;
+}
+
+.arrownext{
+  bottom: -20px;
+  right: 0;
+}
   .border-one {
     box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
   }
