@@ -94,6 +94,11 @@
 }
 /* -----MOBILE----- */
 @media screen and (min-width: 414px) {
+  .amenities-room-btn-link {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
   .amenities-link {
     margin-right: 12px;
   }
