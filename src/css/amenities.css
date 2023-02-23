@@ -77,7 +77,7 @@
   line-height: 1.25;
   letter-spacing: 0.02em;
   color: var(--first-gold-color);
-  margin-right: 12px;
+  margin-right: 6px;
   cursor: pointer;
   transition: var(--timing-function);
 }
@@ -86,12 +86,21 @@
   color: var(--second-gold-color);
 }
 .amenities-icon {
+  width: 20px;
+  height: 20px;
   position: absolute;
   fill: var(--first-gold-color);
   align-items: center;
 }
 /* -----MOBILE----- */
 @media screen and (min-width: 414px) {
+  .amenities-link {
+    margin-right: 12px;
+  }
+  .amenities-icon {
+    width: 25px;
+    height: 25px;
+  }
 }
 /* -----TABLET----- */
 @media screen and (min-width: 1024px) {
