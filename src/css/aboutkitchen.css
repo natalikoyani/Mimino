@@ -7,8 +7,6 @@
 .kitchen-section {
   padding-top: 16px;
   padding-bottom: 28px;
-  padding-left: 15px;
-  padding-right: 15px;
   background: #fffdee;
 }
 
@@ -112,24 +110,8 @@ fill: var(--second-gold-color);
 
 /* ----- Mobile ----- */
 
-@media screen and (min-width: 320px) and (max-width: 414px) {
-  .kitchen-section.container {
-    /* max-width: 328px; */
-    width: 100%;
-  }
-  .kitchen-section {
-    width: 100%;
-  }
-}
 
 @media screen and (min-width: 414px) {
-  .kitchen-section.container {
-    width: 414px;
-  }
-  .kitchen-section {
-    width: 100%;
-  }
-
   .img-interrior {
     margin-left: 0;
   }
@@ -137,13 +119,11 @@ fill: var(--second-gold-color);
 
 /* --------- Tablet ----------- */
 @media screen and (min-width: 1024px) {
-  .kitchen-section.container {
-    width: 1024px;
+  .kitchen-section {
     padding-top: 120px;
     padding-bottom: 40px;
   }
-  .kitchen-section {
-    width: 100%;
+  .kitchen-section> .container {
     position: relative;
   }
   .kitchen-about {
@@ -169,8 +149,8 @@ fill: var(--second-gold-color);
     position: absolute;
     margin: 0;
     padding: 0;
-    top: -52px;
-    left: 512px;
+    top: -150px;
+    right: 90px;
   }
 
   .oruri-descript {
@@ -192,13 +172,6 @@ fill: var(--second-gold-color);
 
 /* -------- Desctop -------- */
 @media screen and (min-width: 1280px) {
-  .kitchen-section.container {
-    width: 1280px;
-  }
-  .kitchen-section {
-    width: 100%;
-  }
-
   .interior-descript {
     width: 518px;
     margin-bottom: 162px;
@@ -206,11 +179,7 @@ fill: var(--second-gold-color);
     line-height: 1.25;
   }
   .img-interrior {
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    top: -33px;
-    left: 640px;
+   right: 150px;
   }
 
   .pexels-slider {
