@@ -12,8 +12,8 @@ $(document).ready(function () {
      autoplay: true,
      autoplaySpeed: 3000,
      variableWidth: true,
-     prevArrow: '.arrowperv_abouthotel',
-     nextArrow: '.arrownext_abouthotel',
+     prevArrow: '.arrownext_abouthotel',
+     nextArrow: '.arrowperv_abouthotel',
      rtl: true,
    });
 });
