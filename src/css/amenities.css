@@ -77,7 +77,6 @@
   line-height: 1.25;
   letter-spacing: 0.02em;
   color: var(--first-gold-color);
-  margin-right: 6px;
   cursor: pointer;
   transition: var(--timing-function);
 }
@@ -85,12 +84,18 @@
 .amenities-link:focus {
   color: var(--second-gold-color);
 }
+.amenities-link:hover .amenities-icon,
+.amenities-link:focus .amenities-icon {
+  fill: var(--second-gold-color);
+}
 .amenities-icon {
   width: 20px;
   height: 20px;
   position: absolute;
   fill: var(--first-gold-color);
   align-items: center;
+  margin-left: 4px;
+  transition: var(--timing-function);
 }
 /* -----MOBILE----- */
 @media screen and (min-width: 414px) {
@@ -99,12 +104,10 @@
     justify-content: center;
     flex-wrap: wrap;
   }
-  .amenities-link {
-    margin-right: 12px;
-  }
   .amenities-icon {
     width: 25px;
     height: 25px;
+    margin-left: 12px;
   }
 }
 /* -----TABLET----- */
@@ -150,7 +153,9 @@
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    margin-right: 10px;
+  }
+  .amenities-icon {
+    margin-left: 10px;
   }
 }
 /* -----DESKTOP----- */
