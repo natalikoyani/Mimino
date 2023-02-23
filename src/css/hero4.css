@@ -1,7 +1,7 @@
 /* <!-- ---------Room Page Hero--------- --> */
 
 .room-hero {
-  padding-top: 55px;
+  padding-top: 351px;
   padding-bottom: 101px;
   background-image: linear-gradient(
       180deg,
@@ -32,11 +32,13 @@
 .room-hero > .container {
   position: relative;
 }
-
+.room-button-arrow {
+  border: none;
+  background: rgba(0,0,0,0);
+}
 .room-hero-arrows {
   display: flex;
   justify-content: space-between;
-  padding-top: 296px;
   margin-bottom: 93px;
 }
 .golden-arrows {
@@ -70,11 +72,6 @@
   line-height: 1.25;
   letter-spacing: 0.02em;
   color: var(--primary-white-color);
-}
-
-.room-hero-address {
-  right: 15px;
-  top: 0px;
 }
 
 .room-hero .maps-link {
@@ -185,6 +182,8 @@
 @media screen and (max-width: 1023.5px) {
   .room-hero-address {
     position: absolute;
+    right: 15px;
+    top: -285px;
   }
 }
 
@@ -192,7 +191,7 @@
 
 @media screen and (min-width: 1024px) {
   .room-hero {
-    padding-top: 59px;
+    padding-top: 341px;
     padding-bottom: 22px;
     background-image: linear-gradient(
         180deg,
@@ -218,7 +217,6 @@
   }
 
   .room-hero-arrows {
-    padding-top: 282px;
     margin-bottom: 88px;
   }
 
@@ -259,11 +257,10 @@
 
 @media screen and (min-width: 1280px) {
   .room-hero {
-    padding-bottom: 48px;
+    padding-bottom: 401px;
   }
 
   .room-hero-arrows {
-    padding-top: 353px;
     margin-bottom: 72px;
   }
 
