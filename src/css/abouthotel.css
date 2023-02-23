@@ -28,6 +28,7 @@
   bottom: 0;
   left: 64px;
 }
+
 /* ============================= */
 .border-hotel-one,
 .border-hotel-two,
@@ -36,6 +37,11 @@
     background-color: #DADADA;
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
+}
+.slider_2 .slick-acrive .border-hotel-three, 
+.border-hotel-four
+ {
+  box-shadow: 2px 2px 30px 2px rgba(0, 0, 0, 0.25);
 }
 .about-hotel-paragraph {
     max-width: 242px;
